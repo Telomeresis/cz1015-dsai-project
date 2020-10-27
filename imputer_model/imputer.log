@@ -1,0 +1,1677 @@
+2019-04-15 16:17:16,536 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-15 16:17:16,542 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 108 rows                             of training data
+2019-04-15 16:17:16,551 [INFO]  Detected 0 rows with missing labels                         for column Log GDP per capita (PPP)
+2019-04-15 16:17:16,552 [INFO]  Dropping 0/108 rows
+2019-04-15 16:17:16,556 [INFO]  Detected 0 rows with missing labels                         for column Log GDP per capita (PPP)
+2019-04-15 16:17:16,562 [INFO]  Dropping 0/12 rows
+2019-04-15 16:17:16,570 [INFO]  Train: 108, Test: 12
+2019-04-15 16:17:16,572 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Life Ladder, Log GDP per capita (PPP), Social Support, Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness and 108 rows of training data with parameters {'input_columns': ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'], 'output_column': 'numerical_features-2yW4Acq9GF', 'output_dim': 8, 'normalize': True, 'scaler': None}
+2019-04-15 16:17:16,586 [INFO]  Building Train Iterator with 108 elements
+2019-04-15 16:17:16,629 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-2yW4Acq9GF
+2019-04-15 16:17:16,629 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:17:16,636 [INFO]  Data Encoding - Encoded 112 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (112, 8)                         and then into shape (112, 8)
+2019-04-15 16:17:16,643 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:17:16,644 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:17:16,650 [INFO]  Label Encoding - Encoded 112 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (112, 1) and                             then into shape (112, 1)
+2019-04-15 16:17:16,652 [INFO]  Building Test Iterator with 12 elements
+2019-04-15 16:17:16,693 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-2yW4Acq9GF
+2019-04-15 16:17:16,695 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:17:16,700 [INFO]  Data Encoding - Encoded 16 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (16, 8)                         and then into shape (16, 8)
+2019-04-15 16:17:16,705 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:17:16,706 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:17:16,709 [INFO]  Label Encoding - Encoded 16 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (16, 1) and                             then into shape (16, 1)
+2019-04-15 16:17:16,711 [INFO]  Concatenating all 1 latent symbols
+2019-04-15 16:17:16,718 [INFO]  Constructing numerical loss for column Log GDP per capita (PPP)
+2019-04-15 16:17:16,723 [INFO]  Building output symbols
+2019-04-15 16:17:16,732 [INFO]  
+========== start: fit model
+2019-04-15 16:17:16,733 [WARNING]  Already bound, ignoring bind()
+2019-04-15 16:17:16,756 [INFO]  Epoch[0] Batch [0-4]	Speed: 5823.27 samples/sec	cross-entropy=9.148964	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,761 [INFO]  Epoch[0] Train-cross-entropy=7.593503
+2019-04-15 16:17:16,762 [INFO]  Epoch[0] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,765 [INFO]  Epoch[0] Time cost=0.025
+2019-04-15 16:17:16,795 [INFO]  Saved checkpoint to "imputer_model\model-0000.params"
+2019-04-15 16:17:16,799 [INFO]  Epoch[0] Validation-cross-entropy=2.683380
+2019-04-15 16:17:16,801 [INFO]  Epoch[0] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,819 [INFO]  Epoch[1] Batch [0-4]	Speed: 5819.23 samples/sec	cross-entropy=3.685228	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,824 [INFO]  Epoch[1] Train-cross-entropy=3.486096
+2019-04-15 16:17:16,826 [INFO]  Epoch[1] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,827 [INFO]  Epoch[1] Time cost=0.025
+2019-04-15 16:17:16,850 [INFO]  Saved checkpoint to "imputer_model\model-0001.params"
+2019-04-15 16:17:16,853 [INFO]  Epoch[1] Validation-cross-entropy=1.809168
+2019-04-15 16:17:16,854 [INFO]  Epoch[1] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,869 [INFO]  Epoch[2] Batch [0-4]	Speed: 7108.24 samples/sec	cross-entropy=2.026418	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,877 [INFO]  Epoch[2] Train-cross-entropy=1.819283
+2019-04-15 16:17:16,878 [INFO]  Epoch[2] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,879 [INFO]  Epoch[2] Time cost=0.023
+2019-04-15 16:17:16,898 [INFO]  Saved checkpoint to "imputer_model\model-0002.params"
+2019-04-15 16:17:16,904 [INFO]  Epoch[2] Validation-cross-entropy=1.574169
+2019-04-15 16:17:16,906 [INFO]  Epoch[2] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,920 [INFO]  Epoch[3] Batch [0-4]	Speed: 8002.25 samples/sec	cross-entropy=1.090983	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,927 [INFO]  Epoch[3] Train-cross-entropy=1.021171
+2019-04-15 16:17:16,928 [INFO]  Epoch[3] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,931 [INFO]  Epoch[3] Time cost=0.024
+2019-04-15 16:17:16,949 [INFO]  Saved checkpoint to "imputer_model\model-0003.params"
+2019-04-15 16:17:16,952 [INFO]  Epoch[3] Validation-cross-entropy=1.689336
+2019-04-15 16:17:16,954 [INFO]  Epoch[3] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,968 [INFO]  Epoch[4] Batch [0-4]	Speed: 8002.73 samples/sec	cross-entropy=0.797624	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,977 [INFO]  Epoch[4] Train-cross-entropy=0.700334
+2019-04-15 16:17:16,979 [INFO]  Epoch[4] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:16,982 [INFO]  Epoch[4] Time cost=0.027
+2019-04-15 16:17:17,000 [INFO]  Saved checkpoint to "imputer_model\model-0004.params"
+2019-04-15 16:17:17,004 [INFO]  Epoch[4] Validation-cross-entropy=1.085305
+2019-04-15 16:17:17,005 [INFO]  Epoch[4] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,025 [INFO]  Epoch[5] Batch [0-4]	Speed: 5818.98 samples/sec	cross-entropy=0.468705	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,033 [INFO]  Epoch[5] Train-cross-entropy=0.415579
+2019-04-15 16:17:17,034 [INFO]  Epoch[5] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,036 [INFO]  Epoch[5] Time cost=0.030
+2019-04-15 16:17:17,055 [INFO]  Saved checkpoint to "imputer_model\model-0005.params"
+2019-04-15 16:17:17,061 [INFO]  Epoch[5] Validation-cross-entropy=0.668737
+2019-04-15 16:17:17,062 [INFO]  Epoch[5] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,076 [INFO]  Epoch[6] Batch [0-4]	Speed: 9146.32 samples/sec	cross-entropy=0.310827	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,082 [INFO]  Epoch[6] Train-cross-entropy=0.258016
+2019-04-15 16:17:17,083 [INFO]  Epoch[6] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,085 [INFO]  Epoch[6] Time cost=0.020
+2019-04-15 16:17:17,108 [INFO]  Saved checkpoint to "imputer_model\model-0006.params"
+2019-04-15 16:17:17,111 [INFO]  Epoch[6] Validation-cross-entropy=0.501759
+2019-04-15 16:17:17,112 [INFO]  Epoch[6] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,126 [INFO]  Epoch[7] Batch [0-4]	Speed: 10669.14 samples/sec	cross-entropy=0.253046	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,133 [INFO]  Epoch[7] Train-cross-entropy=0.212213
+2019-04-15 16:17:17,134 [INFO]  Epoch[7] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,135 [INFO]  Epoch[7] Time cost=0.019
+2019-04-15 16:17:17,159 [INFO]  Saved checkpoint to "imputer_model\model-0007.params"
+2019-04-15 16:17:17,164 [INFO]  Epoch[7] Validation-cross-entropy=0.457033
+2019-04-15 16:17:17,167 [INFO]  Epoch[7] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,188 [INFO]  Epoch[8] Batch [0-4]	Speed: 4922.26 samples/sec	cross-entropy=0.185863	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,197 [INFO]  Epoch[8] Train-cross-entropy=0.158315
+2019-04-15 16:17:17,200 [INFO]  Epoch[8] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,201 [INFO]  Epoch[8] Time cost=0.032
+2019-04-15 16:17:17,227 [INFO]  Saved checkpoint to "imputer_model\model-0008.params"
+2019-04-15 16:17:17,231 [INFO]  Epoch[8] Validation-cross-entropy=0.264691
+2019-04-15 16:17:17,234 [INFO]  Epoch[8] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,247 [INFO]  Epoch[9] Batch [0-4]	Speed: 8000.82 samples/sec	cross-entropy=0.161365	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,255 [INFO]  Epoch[9] Train-cross-entropy=0.135565
+2019-04-15 16:17:17,255 [INFO]  Epoch[9] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,256 [INFO]  Epoch[9] Time cost=0.021
+2019-04-15 16:17:17,284 [INFO]  Saved checkpoint to "imputer_model\model-0009.params"
+2019-04-15 16:17:17,288 [INFO]  Epoch[9] Validation-cross-entropy=0.249777
+2019-04-15 16:17:17,289 [INFO]  Epoch[9] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,307 [INFO]  Epoch[10] Batch [0-4]	Speed: 5337.22 samples/sec	cross-entropy=0.133221	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,315 [INFO]  Epoch[10] Train-cross-entropy=0.111526
+2019-04-15 16:17:17,316 [INFO]  Epoch[10] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,319 [INFO]  Epoch[10] Time cost=0.028
+2019-04-15 16:17:17,344 [INFO]  Saved checkpoint to "imputer_model\model-0010.params"
+2019-04-15 16:17:17,351 [INFO]  Epoch[10] Validation-cross-entropy=0.228290
+2019-04-15 16:17:17,353 [INFO]  Epoch[10] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,374 [INFO]  Epoch[11] Batch [0-4]	Speed: 7113.70 samples/sec	cross-entropy=0.107372	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,385 [INFO]  Epoch[11] Train-cross-entropy=0.091883
+2019-04-15 16:17:17,387 [INFO]  Epoch[11] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,389 [INFO]  Epoch[11] Time cost=0.034
+2019-04-15 16:17:17,413 [INFO]  Saved checkpoint to "imputer_model\model-0011.params"
+2019-04-15 16:17:17,417 [INFO]  Epoch[11] Validation-cross-entropy=0.182054
+2019-04-15 16:17:17,419 [INFO]  Epoch[11] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,435 [INFO]  Epoch[12] Batch [0-4]	Speed: 6405.05 samples/sec	cross-entropy=0.090689	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,443 [INFO]  Epoch[12] Train-cross-entropy=0.078140
+2019-04-15 16:17:17,446 [INFO]  Epoch[12] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,449 [INFO]  Epoch[12] Time cost=0.029
+2019-04-15 16:17:17,470 [INFO]  Saved checkpoint to "imputer_model\model-0012.params"
+2019-04-15 16:17:17,474 [INFO]  Epoch[12] Validation-cross-entropy=0.163758
+2019-04-15 16:17:17,475 [INFO]  Epoch[12] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,491 [INFO]  Epoch[13] Batch [0-4]	Speed: 6396.04 samples/sec	cross-entropy=0.075645	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,499 [INFO]  Epoch[13] Train-cross-entropy=0.066174
+2019-04-15 16:17:17,500 [INFO]  Epoch[13] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,501 [INFO]  Epoch[13] Time cost=0.025
+2019-04-15 16:17:17,522 [INFO]  Saved checkpoint to "imputer_model\model-0013.params"
+2019-04-15 16:17:17,525 [INFO]  Epoch[13] Validation-cross-entropy=0.148826
+2019-04-15 16:17:17,530 [INFO]  Epoch[13] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,561 [INFO]  Epoch[14] Batch [0-4]	Speed: 2910.97 samples/sec	cross-entropy=0.064957	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,573 [INFO]  Epoch[14] Train-cross-entropy=0.057263
+2019-04-15 16:17:17,575 [INFO]  Epoch[14] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,576 [INFO]  Epoch[14] Time cost=0.042
+2019-04-15 16:17:17,602 [INFO]  Saved checkpoint to "imputer_model\model-0014.params"
+2019-04-15 16:17:17,605 [INFO]  Epoch[14] Validation-cross-entropy=0.133384
+2019-04-15 16:17:17,607 [INFO]  Epoch[14] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,623 [INFO]  Epoch[15] Batch [0-4]	Speed: 6398.94 samples/sec	cross-entropy=0.055679	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,633 [INFO]  Epoch[15] Train-cross-entropy=0.049765
+2019-04-15 16:17:17,634 [INFO]  Epoch[15] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,636 [INFO]  Epoch[15] Time cost=0.028
+2019-04-15 16:17:17,662 [INFO]  Saved checkpoint to "imputer_model\model-0015.params"
+2019-04-15 16:17:17,667 [INFO]  Epoch[15] Validation-cross-entropy=0.123360
+2019-04-15 16:17:17,669 [INFO]  Epoch[15] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,686 [INFO]  Epoch[16] Batch [0-4]	Speed: 5817.85 samples/sec	cross-entropy=0.048588	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,693 [INFO]  Epoch[16] Train-cross-entropy=0.043741
+2019-04-15 16:17:17,695 [INFO]  Epoch[16] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,696 [INFO]  Epoch[16] Time cost=0.025
+2019-04-15 16:17:17,720 [INFO]  Saved checkpoint to "imputer_model\model-0016.params"
+2019-04-15 16:17:17,724 [INFO]  Epoch[16] Validation-cross-entropy=0.115728
+2019-04-15 16:17:17,726 [INFO]  Epoch[16] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,739 [INFO]  Epoch[17] Batch [0-4]	Speed: 9144.14 samples/sec	cross-entropy=0.041931	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,751 [INFO]  Epoch[17] Train-cross-entropy=0.038381
+2019-04-15 16:17:17,752 [INFO]  Epoch[17] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,755 [INFO]  Epoch[17] Time cost=0.028
+2019-04-15 16:17:17,774 [INFO]  Saved checkpoint to "imputer_model\model-0017.params"
+2019-04-15 16:17:17,777 [INFO]  Epoch[17] Validation-cross-entropy=0.105592
+2019-04-15 16:17:17,778 [INFO]  Epoch[17] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,796 [INFO]  Epoch[18] Batch [0-4]	Speed: 7992.48 samples/sec	cross-entropy=0.036858	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,805 [INFO]  Epoch[18] Train-cross-entropy=0.034104
+2019-04-15 16:17:17,807 [INFO]  Epoch[18] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,809 [INFO]  Epoch[18] Time cost=0.027
+2019-04-15 16:17:17,833 [INFO]  Saved checkpoint to "imputer_model\model-0018.params"
+2019-04-15 16:17:17,839 [INFO]  Epoch[18] Validation-cross-entropy=0.097892
+2019-04-15 16:17:17,841 [INFO]  Epoch[18] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,859 [INFO]  Epoch[19] Batch [0-4]	Speed: 8018.74 samples/sec	cross-entropy=0.032468	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,869 [INFO]  Epoch[19] Train-cross-entropy=0.030435
+2019-04-15 16:17:17,870 [INFO]  Epoch[19] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,873 [INFO]  Epoch[19] Time cost=0.030
+2019-04-15 16:17:17,894 [INFO]  Saved checkpoint to "imputer_model\model-0019.params"
+2019-04-15 16:17:17,897 [INFO]  Epoch[19] Validation-cross-entropy=0.089746
+2019-04-15 16:17:17,898 [INFO]  Epoch[19] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,920 [INFO]  Epoch[20] Batch [0-4]	Speed: 6398.94 samples/sec	cross-entropy=0.028992	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,931 [INFO]  Epoch[20] Train-cross-entropy=0.027387
+2019-04-15 16:17:17,931 [INFO]  Epoch[20] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,934 [INFO]  Epoch[20] Time cost=0.034
+2019-04-15 16:17:17,955 [INFO]  Saved checkpoint to "imputer_model\model-0020.params"
+2019-04-15 16:17:17,961 [INFO]  Epoch[20] Validation-cross-entropy=0.083486
+2019-04-15 16:17:17,962 [INFO]  Epoch[20] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,981 [INFO]  Epoch[21] Batch [0-4]	Speed: 5807.02 samples/sec	cross-entropy=0.026092	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,988 [INFO]  Epoch[21] Train-cross-entropy=0.024879
+2019-04-15 16:17:17,990 [INFO]  Epoch[21] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:17,994 [INFO]  Epoch[21] Time cost=0.029
+2019-04-15 16:17:18,008 [INFO]  Saved checkpoint to "imputer_model\model-0021.params"
+2019-04-15 16:17:18,012 [INFO]  Epoch[21] Validation-cross-entropy=0.078457
+2019-04-15 16:17:18,013 [INFO]  Epoch[21] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,035 [INFO]  Epoch[22] Batch [0-4]	Speed: 5328.96 samples/sec	cross-entropy=0.023621	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,048 [INFO]  Epoch[22] Train-cross-entropy=0.022666
+2019-04-15 16:17:18,053 [INFO]  Epoch[22] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,057 [INFO]  Epoch[22] Time cost=0.037
+2019-04-15 16:17:18,091 [INFO]  Saved checkpoint to "imputer_model\model-0022.params"
+2019-04-15 16:17:18,126 [INFO]  Epoch[22] Validation-cross-entropy=0.073685
+2019-04-15 16:17:18,128 [INFO]  Epoch[22] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,165 [INFO]  Epoch[23] Batch [0-4]	Speed: 6400.77 samples/sec	cross-entropy=0.021536	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,198 [INFO]  Epoch[23] Train-cross-entropy=0.020805
+2019-04-15 16:17:18,204 [INFO]  Epoch[23] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,207 [INFO]  Epoch[23] Time cost=0.077
+2019-04-15 16:17:18,232 [INFO]  Saved checkpoint to "imputer_model\model-0023.params"
+2019-04-15 16:17:18,243 [INFO]  Epoch[23] Validation-cross-entropy=0.069516
+2019-04-15 16:17:18,248 [INFO]  Epoch[23] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,395 [INFO]  Epoch[24] Batch [0-4]	Speed: 888.88 samples/sec	cross-entropy=0.019751	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,411 [INFO]  Epoch[24] Train-cross-entropy=0.019148
+2019-04-15 16:17:18,413 [INFO]  Epoch[24] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,417 [INFO]  Epoch[24] Time cost=0.165
+2019-04-15 16:17:18,461 [INFO]  Saved checkpoint to "imputer_model\model-0024.params"
+2019-04-15 16:17:18,474 [INFO]  Epoch[24] Validation-cross-entropy=0.065593
+2019-04-15 16:17:18,476 [INFO]  Epoch[24] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,507 [INFO]  Epoch[25] Batch [0-4]	Speed: 4000.41 samples/sec	cross-entropy=0.018179	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,516 [INFO]  Epoch[25] Train-cross-entropy=0.017712
+2019-04-15 16:17:18,518 [INFO]  Epoch[25] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,520 [INFO]  Epoch[25] Time cost=0.041
+2019-04-15 16:17:18,541 [INFO]  Saved checkpoint to "imputer_model\model-0025.params"
+2019-04-15 16:17:18,546 [INFO]  Epoch[25] Validation-cross-entropy=0.062183
+2019-04-15 16:17:18,547 [INFO]  Epoch[25] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,564 [INFO]  Epoch[26] Batch [0-4]	Speed: 6400.62 samples/sec	cross-entropy=0.016812	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,572 [INFO]  Epoch[26] Train-cross-entropy=0.016436
+2019-04-15 16:17:18,574 [INFO]  Epoch[26] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,576 [INFO]  Epoch[26] Time cost=0.027
+2019-04-15 16:17:18,597 [INFO]  Saved checkpoint to "imputer_model\model-0026.params"
+2019-04-15 16:17:18,603 [INFO]  Epoch[26] Validation-cross-entropy=0.059217
+2019-04-15 16:17:18,608 [INFO]  Epoch[26] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,634 [INFO]  Epoch[27] Batch [0-4]	Speed: 8003.44 samples/sec	cross-entropy=0.015575	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,641 [INFO]  Epoch[27] Train-cross-entropy=0.015298
+2019-04-15 16:17:18,642 [INFO]  Epoch[27] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,647 [INFO]  Epoch[27] Time cost=0.033
+2019-04-15 16:17:18,670 [INFO]  Saved checkpoint to "imputer_model\model-0027.params"
+2019-04-15 16:17:18,674 [INFO]  Epoch[27] Validation-cross-entropy=0.056578
+2019-04-15 16:17:18,675 [INFO]  Epoch[27] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,694 [INFO]  Epoch[28] Batch [0-4]	Speed: 5270.47 samples/sec	cross-entropy=0.014482	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,701 [INFO]  Epoch[28] Train-cross-entropy=0.014276
+2019-04-15 16:17:18,703 [INFO]  Epoch[28] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,705 [INFO]  Epoch[28] Time cost=0.028
+2019-04-15 16:17:18,726 [INFO]  Saved checkpoint to "imputer_model\model-0028.params"
+2019-04-15 16:17:18,732 [INFO]  Epoch[28] Validation-cross-entropy=0.054383
+2019-04-15 16:17:18,734 [INFO]  Epoch[28] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,751 [INFO]  Epoch[29] Batch [0-4]	Speed: 7112.00 samples/sec	cross-entropy=0.013484	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,762 [INFO]  Epoch[29] Train-cross-entropy=0.013347
+2019-04-15 16:17:18,763 [INFO]  Epoch[29] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,764 [INFO]  Epoch[29] Time cost=0.024
+2019-04-15 16:17:18,782 [INFO]  Saved checkpoint to "imputer_model\model-0029.params"
+2019-04-15 16:17:18,787 [INFO]  Epoch[29] Validation-cross-entropy=0.052321
+2019-04-15 16:17:18,788 [INFO]  Epoch[29] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,805 [INFO]  Epoch[30] Batch [0-4]	Speed: 7110.68 samples/sec	cross-entropy=0.012613	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,816 [INFO]  Epoch[30] Train-cross-entropy=0.012512
+2019-04-15 16:17:18,817 [INFO]  Epoch[30] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,819 [INFO]  Epoch[30] Time cost=0.029
+2019-04-15 16:17:18,836 [INFO]  Saved checkpoint to "imputer_model\model-0030.params"
+2019-04-15 16:17:18,841 [INFO]  Epoch[30] Validation-cross-entropy=0.050530
+2019-04-15 16:17:18,842 [INFO]  Epoch[30] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,859 [INFO]  Epoch[31] Batch [0-4]	Speed: 7112.38 samples/sec	cross-entropy=0.011834	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,866 [INFO]  Epoch[31] Train-cross-entropy=0.011766
+2019-04-15 16:17:18,867 [INFO]  Epoch[31] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,874 [INFO]  Epoch[31] Time cost=0.029
+2019-04-15 16:17:18,892 [INFO]  Saved checkpoint to "imputer_model\model-0031.params"
+2019-04-15 16:17:18,894 [INFO]  Epoch[31] Validation-cross-entropy=0.048805
+2019-04-15 16:17:18,896 [INFO]  Epoch[31] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,913 [INFO]  Epoch[32] Batch [0-4]	Speed: 6399.85 samples/sec	cross-entropy=0.011118	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,923 [INFO]  Epoch[32] Train-cross-entropy=0.011071
+2019-04-15 16:17:18,924 [INFO]  Epoch[32] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,925 [INFO]  Epoch[32] Time cost=0.028
+2019-04-15 16:17:18,947 [INFO]  Saved checkpoint to "imputer_model\model-0032.params"
+2019-04-15 16:17:18,950 [INFO]  Epoch[32] Validation-cross-entropy=0.047197
+2019-04-15 16:17:18,952 [INFO]  Epoch[32] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,975 [INFO]  Epoch[33] Batch [0-4]	Speed: 6400.46 samples/sec	cross-entropy=0.010465	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,982 [INFO]  Epoch[33] Train-cross-entropy=0.010431
+2019-04-15 16:17:18,983 [INFO]  Epoch[33] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:18,988 [INFO]  Epoch[33] Time cost=0.033
+2019-04-15 16:17:19,006 [INFO]  Saved checkpoint to "imputer_model\model-0033.params"
+2019-04-15 16:17:19,011 [INFO]  Epoch[33] Validation-cross-entropy=0.045703
+2019-04-15 16:17:19,013 [INFO]  Epoch[33] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,029 [INFO]  Epoch[34] Batch [0-4]	Speed: 9145.08 samples/sec	cross-entropy=0.009869	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,041 [INFO]  Epoch[34] Train-cross-entropy=0.009842
+2019-04-15 16:17:19,042 [INFO]  Epoch[34] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,048 [INFO]  Epoch[34] Time cost=0.031
+2019-04-15 16:17:19,067 [INFO]  Saved checkpoint to "imputer_model\model-0034.params"
+2019-04-15 16:17:19,074 [INFO]  Epoch[34] Validation-cross-entropy=0.044424
+2019-04-15 16:17:19,076 [INFO]  Epoch[34] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,101 [INFO]  Epoch[35] Batch [0-4]	Speed: 3999.10 samples/sec	cross-entropy=0.009321	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,117 [INFO]  Epoch[35] Train-cross-entropy=0.009298
+2019-04-15 16:17:19,118 [INFO]  Epoch[35] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,122 [INFO]  Epoch[35] Time cost=0.043
+2019-04-15 16:17:19,147 [INFO]  Saved checkpoint to "imputer_model\model-0035.params"
+2019-04-15 16:17:19,151 [INFO]  Epoch[35] Validation-cross-entropy=0.043225
+2019-04-15 16:17:19,156 [INFO]  Epoch[35] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,179 [INFO]  Epoch[36] Batch [0-4]	Speed: 4268.13 samples/sec	cross-entropy=0.008819	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,184 [INFO]  Epoch[36] Train-cross-entropy=0.008792
+2019-04-15 16:17:19,188 [INFO]  Epoch[36] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,190 [INFO]  Epoch[36] Time cost=0.032
+2019-04-15 16:17:19,227 [INFO]  Saved checkpoint to "imputer_model\model-0036.params"
+2019-04-15 16:17:19,231 [INFO]  Epoch[36] Validation-cross-entropy=0.042127
+2019-04-15 16:17:19,233 [INFO]  Epoch[36] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,248 [INFO]  Epoch[37] Batch [0-4]	Speed: 9149.44 samples/sec	cross-entropy=0.008355	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,260 [INFO]  Epoch[37] Train-cross-entropy=0.008327
+2019-04-15 16:17:19,261 [INFO]  Epoch[37] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,263 [INFO]  Epoch[37] Time cost=0.028
+2019-04-15 16:17:19,285 [INFO]  Saved checkpoint to "imputer_model\model-0037.params"
+2019-04-15 16:17:19,296 [INFO]  Epoch[37] Validation-cross-entropy=0.041162
+2019-04-15 16:17:19,299 [INFO]  Epoch[37] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,321 [INFO]  Epoch[38] Batch [0-4]	Speed: 5807.53 samples/sec	cross-entropy=0.007919	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,330 [INFO]  Epoch[38] Train-cross-entropy=0.007893
+2019-04-15 16:17:19,331 [INFO]  Epoch[38] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,332 [INFO]  Epoch[38] Time cost=0.030
+2019-04-15 16:17:19,355 [INFO]  Saved checkpoint to "imputer_model\model-0038.params"
+2019-04-15 16:17:19,360 [INFO]  Epoch[38] Validation-cross-entropy=0.040227
+2019-04-15 16:17:19,361 [INFO]  Epoch[38] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,379 [INFO]  Epoch[39] Batch [0-4]	Speed: 5333.83 samples/sec	cross-entropy=0.007514	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,387 [INFO]  Epoch[39] Train-cross-entropy=0.007492
+2019-04-15 16:17:19,389 [INFO]  Epoch[39] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,393 [INFO]  Epoch[39] Time cost=0.029
+2019-04-15 16:17:19,413 [INFO]  Saved checkpoint to "imputer_model\model-0039.params"
+2019-04-15 16:17:19,417 [INFO]  Epoch[39] Validation-cross-entropy=0.039320
+2019-04-15 16:17:19,421 [INFO]  Epoch[39] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,438 [INFO]  Epoch[40] Batch [0-4]	Speed: 8001.53 samples/sec	cross-entropy=0.007149	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,444 [INFO]  Epoch[40] Train-cross-entropy=0.007121
+2019-04-15 16:17:19,446 [INFO]  Epoch[40] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,448 [INFO]  Epoch[40] Time cost=0.022
+2019-04-15 16:17:19,468 [INFO]  Saved checkpoint to "imputer_model\model-0040.params"
+2019-04-15 16:17:19,474 [INFO]  Epoch[40] Validation-cross-entropy=0.038560
+2019-04-15 16:17:19,476 [INFO]  Epoch[40] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,492 [INFO]  Epoch[41] Batch [0-4]	Speed: 7111.63 samples/sec	cross-entropy=0.006813	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,502 [INFO]  Epoch[41] Train-cross-entropy=0.006780
+2019-04-15 16:17:19,504 [INFO]  Epoch[41] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,505 [INFO]  Epoch[41] Time cost=0.028
+2019-04-15 16:17:19,526 [INFO]  Saved checkpoint to "imputer_model\model-0041.params"
+2019-04-15 16:17:19,529 [INFO]  Epoch[41] Validation-cross-entropy=0.037811
+2019-04-15 16:17:19,531 [INFO]  Epoch[41] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,549 [INFO]  Epoch[42] Batch [0-4]	Speed: 5334.89 samples/sec	cross-entropy=0.006488	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,556 [INFO]  Epoch[42] Train-cross-entropy=0.006451
+2019-04-15 16:17:19,557 [INFO]  Epoch[42] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,559 [INFO]  Epoch[42] Time cost=0.027
+2019-04-15 16:17:19,579 [INFO]  Saved checkpoint to "imputer_model\model-0042.params"
+2019-04-15 16:17:19,584 [INFO]  Epoch[42] Validation-cross-entropy=0.036988
+2019-04-15 16:17:19,585 [INFO]  Epoch[42] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,601 [INFO]  Epoch[43] Batch [0-4]	Speed: 6394.82 samples/sec	cross-entropy=0.006192	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,610 [INFO]  Epoch[43] Train-cross-entropy=0.006149
+2019-04-15 16:17:19,612 [INFO]  Epoch[43] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,616 [INFO]  Epoch[43] Time cost=0.029
+2019-04-15 16:17:19,643 [INFO]  Saved checkpoint to "imputer_model\model-0043.params"
+2019-04-15 16:17:19,647 [INFO]  Epoch[43] Validation-cross-entropy=0.036301
+2019-04-15 16:17:19,648 [INFO]  Epoch[43] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,664 [INFO]  Epoch[44] Batch [0-4]	Speed: 7999.15 samples/sec	cross-entropy=0.005903	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,673 [INFO]  Epoch[44] Train-cross-entropy=0.005859
+2019-04-15 16:17:19,675 [INFO]  Epoch[44] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,676 [INFO]  Epoch[44] Time cost=0.027
+2019-04-15 16:17:19,697 [INFO]  Saved checkpoint to "imputer_model\model-0044.params"
+2019-04-15 16:17:19,705 [INFO]  Epoch[44] Validation-cross-entropy=0.035691
+2019-04-15 16:17:19,707 [INFO]  Epoch[44] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,722 [INFO]  Epoch[45] Batch [0-4]	Speed: 6398.48 samples/sec	cross-entropy=0.005645	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,730 [INFO]  Epoch[45] Train-cross-entropy=0.005594
+2019-04-15 16:17:19,734 [INFO]  Epoch[45] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,737 [INFO]  Epoch[45] Time cost=0.029
+2019-04-15 16:17:19,756 [INFO]  Saved checkpoint to "imputer_model\model-0045.params"
+2019-04-15 16:17:19,760 [INFO]  Epoch[45] Validation-cross-entropy=0.035180
+2019-04-15 16:17:19,763 [INFO]  Epoch[45] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,780 [INFO]  Epoch[46] Batch [0-4]	Speed: 6398.33 samples/sec	cross-entropy=0.005390	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,788 [INFO]  Epoch[46] Train-cross-entropy=0.005336
+2019-04-15 16:17:19,789 [INFO]  Epoch[46] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,790 [INFO]  Epoch[46] Time cost=0.025
+2019-04-15 16:17:19,812 [INFO]  Saved checkpoint to "imputer_model\model-0046.params"
+2019-04-15 16:17:19,818 [INFO]  Epoch[46] Validation-cross-entropy=0.034587
+2019-04-15 16:17:19,819 [INFO]  Epoch[46] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,835 [INFO]  Epoch[47] Batch [0-4]	Speed: 7113.89 samples/sec	cross-entropy=0.005153	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,843 [INFO]  Epoch[47] Train-cross-entropy=0.005096
+2019-04-15 16:17:19,844 [INFO]  Epoch[47] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,847 [INFO]  Epoch[47] Time cost=0.023
+2019-04-15 16:17:19,867 [INFO]  Saved checkpoint to "imputer_model\model-0047.params"
+2019-04-15 16:17:19,874 [INFO]  Epoch[47] Validation-cross-entropy=0.033985
+2019-04-15 16:17:19,876 [INFO]  Epoch[47] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,894 [INFO]  Epoch[48] Batch [0-4]	Speed: 5819.74 samples/sec	cross-entropy=0.004931	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,901 [INFO]  Epoch[48] Train-cross-entropy=0.004866
+2019-04-15 16:17:19,904 [INFO]  Epoch[48] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,906 [INFO]  Epoch[48] Time cost=0.028
+2019-04-15 16:17:19,927 [INFO]  Saved checkpoint to "imputer_model\model-0048.params"
+2019-04-15 16:17:19,931 [INFO]  Epoch[48] Validation-cross-entropy=0.033394
+2019-04-15 16:17:19,933 [INFO]  Epoch[48] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,952 [INFO]  Epoch[49] Batch [0-4]	Speed: 9144.45 samples/sec	cross-entropy=0.004722	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,965 [INFO]  Epoch[49] Train-cross-entropy=0.004651
+2019-04-15 16:17:19,966 [INFO]  Epoch[49] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,967 [INFO]  Epoch[49] Time cost=0.033
+2019-04-15 16:17:19,988 [INFO]  Saved checkpoint to "imputer_model\model-0049.params"
+2019-04-15 16:17:19,991 [INFO]  Epoch[49] Validation-cross-entropy=0.032905
+2019-04-15 16:17:19,992 [INFO]  Epoch[49] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:17:19,995 [INFO]  
+========== done (3.262129545211792 s) fit model
+2019-04-15 16:17:20,005 [INFO]  Expected calibration error: 100.0%
+2019-04-15 16:17:20,017 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-15 16:17:20,023 [INFO]  save metrics in imputer_model\fit-test-metrics.json
+2019-04-15 16:17:20,035 [INFO]  Keeping imputer_model\model-0049.params
+2019-04-15 16:17:20,040 [INFO]  Deleting imputer_model\model-0041.params
+2019-04-15 16:17:20,041 [INFO]  Deleting imputer_model\model-0031.params
+2019-04-15 16:17:20,043 [INFO]  Deleting imputer_model\model-0044.params
+2019-04-15 16:17:20,046 [INFO]  Deleting imputer_model\model-0046.params
+2019-04-15 16:17:20,051 [INFO]  Deleting imputer_model\model-0029.params
+2019-04-15 16:17:20,054 [INFO]  Deleting imputer_model\model-0045.params
+2019-04-15 16:17:20,060 [INFO]  Deleting imputer_model\model-0043.params
+2019-04-15 16:17:20,063 [INFO]  Deleting imputer_model\model-0048.params
+2019-04-15 16:17:20,065 [INFO]  Deleting imputer_model\model-0005.params
+2019-04-15 16:17:20,067 [INFO]  Deleting imputer_model\model-0010.params
+2019-04-15 16:17:20,070 [INFO]  Deleting imputer_model\model-0037.params
+2019-04-15 16:17:20,072 [INFO]  Deleting imputer_model\model-0038.params
+2019-04-15 16:17:20,074 [INFO]  Deleting imputer_model\model-0011.params
+2019-04-15 16:17:20,076 [INFO]  Deleting imputer_model\model-0014.params
+2019-04-15 16:17:20,078 [INFO]  Deleting imputer_model\model-0009.params
+2019-04-15 16:17:20,080 [INFO]  Deleting imputer_model\model-0016.params
+2019-04-15 16:17:20,082 [INFO]  Deleting imputer_model\model-0030.params
+2019-04-15 16:17:20,084 [INFO]  Deleting imputer_model\model-0034.params
+2019-04-15 16:17:20,087 [INFO]  Deleting imputer_model\model-0000.params
+2019-04-15 16:17:20,090 [INFO]  Deleting imputer_model\model-0042.params
+2019-04-15 16:17:20,092 [INFO]  Deleting imputer_model\model-0006.params
+2019-04-15 16:17:20,094 [INFO]  Deleting imputer_model\model-0036.params
+2019-04-15 16:17:20,096 [INFO]  Deleting imputer_model\model-0002.params
+2019-04-15 16:17:20,106 [INFO]  Deleting imputer_model\model-0047.params
+2019-04-15 16:17:20,108 [INFO]  Deleting imputer_model\model-0008.params
+2019-04-15 16:17:20,110 [INFO]  Deleting imputer_model\model-0035.params
+2019-04-15 16:17:20,111 [INFO]  Deleting imputer_model\model-0033.params
+2019-04-15 16:17:20,113 [INFO]  Deleting imputer_model\model-0013.params
+2019-04-15 16:17:20,115 [INFO]  Deleting imputer_model\model-0004.params
+2019-04-15 16:17:20,117 [INFO]  Deleting imputer_model\model-0025.params
+2019-04-15 16:17:20,119 [INFO]  Deleting imputer_model\model-0027.params
+2019-04-15 16:17:20,122 [INFO]  Deleting imputer_model\model-0020.params
+2019-04-15 16:17:20,126 [INFO]  Deleting imputer_model\model-0007.params
+2019-04-15 16:17:20,132 [INFO]  Deleting imputer_model\model-0023.params
+2019-04-15 16:17:20,136 [INFO]  Deleting imputer_model\model-0039.params
+2019-04-15 16:17:20,147 [INFO]  Deleting imputer_model\model-0017.params
+2019-04-15 16:17:20,149 [INFO]  Deleting imputer_model\model-0015.params
+2019-04-15 16:17:20,151 [INFO]  Deleting imputer_model\model-0018.params
+2019-04-15 16:17:20,153 [INFO]  Deleting imputer_model\model-0003.params
+2019-04-15 16:17:20,156 [INFO]  Deleting imputer_model\model-0028.params
+2019-04-15 16:17:20,158 [INFO]  Deleting imputer_model\model-0012.params
+2019-04-15 16:17:20,159 [INFO]  Deleting imputer_model\model-0032.params
+2019-04-15 16:17:20,162 [INFO]  Deleting imputer_model\model-0040.params
+2019-04-15 16:17:20,164 [INFO]  Deleting imputer_model\model-0019.params
+2019-04-15 16:17:20,167 [INFO]  Deleting imputer_model\model-0022.params
+2019-04-15 16:17:20,169 [INFO]  Deleting imputer_model\model-0001.params
+2019-04-15 16:17:20,171 [INFO]  Deleting imputer_model\model-0024.params
+2019-04-15 16:17:20,173 [INFO]  Deleting imputer_model\model-0026.params
+2019-04-15 16:17:20,175 [INFO]  Deleting imputer_model\model-0021.params
+2019-04-15 16:17:20,298 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-2yW4Acq9GF
+2019-04-15 16:17:20,299 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:17:20,302 [INFO]  Data Encoding - Encoded 32 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (32, 8)                         and then into shape (32, 8)
+2019-04-15 16:17:20,305 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:17:20,311 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:17:20,314 [INFO]  Label Encoding - Encoded 32 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (32, 1) and                             then into shape (32, 1)
+2019-04-15 16:17:20,320 [INFO]  Top-k only for CategoricalEncoder, dropping Log GDP per capita (PPP), <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-15 16:17:20,321 [INFO]  Precision filtering only for CategoricalEncoder returning                             Log GDP per capita (PPP) unfiltered
+2019-04-15 16:18:09,614 [INFO]  Assuming 8 numeric input columns: Life Ladder, Log GDP per capita (PPP), Social Support, Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness
+2019-04-15 16:18:09,615 [INFO]  Assuming 0 string input columns: 
+2019-04-15 16:18:09,618 [INFO]  No output column name provided for ColumnEncoder using Log GDP per capita (PPP)
+2019-04-15 16:18:09,620 [INFO]  Assuming numeric output column: Log GDP per capita (PPP)
+2019-04-15 16:18:09,623 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-15 16:18:09,623 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-15 16:18:09,628 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 108 rows                             of training data
+2019-04-15 16:18:09,628 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 108 rows                             of training data
+2019-04-15 16:18:09,635 [INFO]  Detected 0 rows with missing labels                         for column Log GDP per capita (PPP)
+2019-04-15 16:18:09,635 [INFO]  Detected 0 rows with missing labels                         for column Log GDP per capita (PPP)
+2019-04-15 16:18:09,637 [INFO]  Dropping 0/108 rows
+2019-04-15 16:18:09,637 [INFO]  Dropping 0/108 rows
+2019-04-15 16:18:09,640 [INFO]  Detected 0 rows with missing labels                         for column Log GDP per capita (PPP)
+2019-04-15 16:18:09,640 [INFO]  Detected 0 rows with missing labels                         for column Log GDP per capita (PPP)
+2019-04-15 16:18:09,643 [INFO]  Dropping 0/12 rows
+2019-04-15 16:18:09,643 [INFO]  Dropping 0/12 rows
+2019-04-15 16:18:09,646 [INFO]  Train: 108, Test: 12
+2019-04-15 16:18:09,646 [INFO]  Train: 108, Test: 12
+2019-04-15 16:18:09,648 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Life Ladder, Log GDP per capita (PPP), Social Support, Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness and 108 rows of training data with parameters {'input_columns': ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'], 'output_column': 'numerical_features-z6Y1t9EwL5', 'output_dim': 8, 'normalize': True, 'scaler': None}
+2019-04-15 16:18:09,648 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Life Ladder, Log GDP per capita (PPP), Social Support, Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness and 108 rows of training data with parameters {'input_columns': ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'], 'output_column': 'numerical_features-z6Y1t9EwL5', 'output_dim': 8, 'normalize': True, 'scaler': None}
+2019-04-15 16:18:09,670 [INFO]  Building Train Iterator with 108 elements
+2019-04-15 16:18:09,670 [INFO]  Building Train Iterator with 108 elements
+2019-04-15 16:18:09,716 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-z6Y1t9EwL5
+2019-04-15 16:18:09,716 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-z6Y1t9EwL5
+2019-04-15 16:18:09,718 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,718 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,721 [INFO]  Data Encoding - Encoded 112 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (112, 8)                         and then into shape (112, 8)
+2019-04-15 16:18:09,721 [INFO]  Data Encoding - Encoded 112 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (112, 8)                         and then into shape (112, 8)
+2019-04-15 16:18:09,724 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:18:09,724 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:18:09,726 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,726 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,729 [INFO]  Label Encoding - Encoded 112 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (112, 1) and                             then into shape (112, 1)
+2019-04-15 16:18:09,729 [INFO]  Label Encoding - Encoded 112 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (112, 1) and                             then into shape (112, 1)
+2019-04-15 16:18:09,730 [INFO]  Building Test Iterator with 12 elements
+2019-04-15 16:18:09,730 [INFO]  Building Test Iterator with 12 elements
+2019-04-15 16:18:09,776 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-z6Y1t9EwL5
+2019-04-15 16:18:09,776 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-z6Y1t9EwL5
+2019-04-15 16:18:09,777 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,777 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,779 [INFO]  Data Encoding - Encoded 16 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (16, 8)                         and then into shape (16, 8)
+2019-04-15 16:18:09,779 [INFO]  Data Encoding - Encoded 16 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (16, 8)                         and then into shape (16, 8)
+2019-04-15 16:18:09,784 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:18:09,784 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:18:09,785 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,785 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:09,788 [INFO]  Label Encoding - Encoded 16 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (16, 1) and                             then into shape (16, 1)
+2019-04-15 16:18:09,788 [INFO]  Label Encoding - Encoded 16 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (16, 1) and                             then into shape (16, 1)
+2019-04-15 16:18:09,790 [INFO]  Concatenating all 1 latent symbols
+2019-04-15 16:18:09,790 [INFO]  Concatenating all 1 latent symbols
+2019-04-15 16:18:09,792 [INFO]  Constructing numerical loss for column Log GDP per capita (PPP)
+2019-04-15 16:18:09,792 [INFO]  Constructing numerical loss for column Log GDP per capita (PPP)
+2019-04-15 16:18:09,801 [INFO]  Building output symbols
+2019-04-15 16:18:09,801 [INFO]  Building output symbols
+2019-04-15 16:18:09,812 [INFO]  
+========== start: fit model
+2019-04-15 16:18:09,812 [INFO]  
+========== start: fit model
+2019-04-15 16:18:09,813 [WARNING]  Already bound, ignoring bind()
+2019-04-15 16:18:09,813 [WARNING]  Already bound, ignoring bind()
+2019-04-15 16:18:09,829 [INFO]  Epoch[0] Batch [0-4]	Speed: 9138.23 samples/sec	cross-entropy=11.688810	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,829 [INFO]  Epoch[0] Batch [0-4]	Speed: 9138.23 samples/sec	cross-entropy=11.688810	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,838 [INFO]  Epoch[0] Train-cross-entropy=10.011241
+2019-04-15 16:18:09,838 [INFO]  Epoch[0] Train-cross-entropy=10.011241
+2019-04-15 16:18:09,841 [INFO]  Epoch[0] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,841 [INFO]  Epoch[0] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,843 [INFO]  Epoch[0] Time cost=0.024
+2019-04-15 16:18:09,843 [INFO]  Epoch[0] Time cost=0.024
+2019-04-15 16:18:09,865 [INFO]  Saved checkpoint to "imputer_model\model-0000.params"
+2019-04-15 16:18:09,865 [INFO]  Saved checkpoint to "imputer_model\model-0000.params"
+2019-04-15 16:18:09,868 [INFO]  Epoch[0] Validation-cross-entropy=3.386377
+2019-04-15 16:18:09,868 [INFO]  Epoch[0] Validation-cross-entropy=3.386377
+2019-04-15 16:18:09,870 [INFO]  Epoch[0] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,870 [INFO]  Epoch[0] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,887 [INFO]  Epoch[1] Batch [0-4]	Speed: 9143.52 samples/sec	cross-entropy=3.127531	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,887 [INFO]  Epoch[1] Batch [0-4]	Speed: 9143.52 samples/sec	cross-entropy=3.127531	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,894 [INFO]  Epoch[1] Train-cross-entropy=3.231709
+2019-04-15 16:18:09,894 [INFO]  Epoch[1] Train-cross-entropy=3.231709
+2019-04-15 16:18:09,895 [INFO]  Epoch[1] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,895 [INFO]  Epoch[1] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,896 [INFO]  Epoch[1] Time cost=0.023
+2019-04-15 16:18:09,896 [INFO]  Epoch[1] Time cost=0.023
+2019-04-15 16:18:09,921 [INFO]  Saved checkpoint to "imputer_model\model-0001.params"
+2019-04-15 16:18:09,921 [INFO]  Saved checkpoint to "imputer_model\model-0001.params"
+2019-04-15 16:18:09,925 [INFO]  Epoch[1] Validation-cross-entropy=5.500347
+2019-04-15 16:18:09,925 [INFO]  Epoch[1] Validation-cross-entropy=5.500347
+2019-04-15 16:18:09,926 [INFO]  Epoch[1] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,926 [INFO]  Epoch[1] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,941 [INFO]  Epoch[2] Batch [0-4]	Speed: 8001.53 samples/sec	cross-entropy=3.202852	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,941 [INFO]  Epoch[2] Batch [0-4]	Speed: 8001.53 samples/sec	cross-entropy=3.202852	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,951 [INFO]  Epoch[2] Train-cross-entropy=2.848008
+2019-04-15 16:18:09,951 [INFO]  Epoch[2] Train-cross-entropy=2.848008
+2019-04-15 16:18:09,953 [INFO]  Epoch[2] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,953 [INFO]  Epoch[2] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,954 [INFO]  Epoch[2] Time cost=0.026
+2019-04-15 16:18:09,954 [INFO]  Epoch[2] Time cost=0.026
+2019-04-15 16:18:09,971 [INFO]  Saved checkpoint to "imputer_model\model-0002.params"
+2019-04-15 16:18:09,971 [INFO]  Saved checkpoint to "imputer_model\model-0002.params"
+2019-04-15 16:18:09,974 [INFO]  Epoch[2] Validation-cross-entropy=2.142850
+2019-04-15 16:18:09,974 [INFO]  Epoch[2] Validation-cross-entropy=2.142850
+2019-04-15 16:18:09,976 [INFO]  Epoch[2] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,976 [INFO]  Epoch[2] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,996 [INFO]  Epoch[3] Batch [0-4]	Speed: 5821.63 samples/sec	cross-entropy=1.696759	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:09,996 [INFO]  Epoch[3] Batch [0-4]	Speed: 5821.63 samples/sec	cross-entropy=1.696759	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,003 [INFO]  Epoch[3] Train-cross-entropy=1.540668
+2019-04-15 16:18:10,003 [INFO]  Epoch[3] Train-cross-entropy=1.540668
+2019-04-15 16:18:10,005 [INFO]  Epoch[3] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,005 [INFO]  Epoch[3] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,006 [INFO]  Epoch[3] Time cost=0.029
+2019-04-15 16:18:10,006 [INFO]  Epoch[3] Time cost=0.029
+2019-04-15 16:18:10,025 [INFO]  Saved checkpoint to "imputer_model\model-0003.params"
+2019-04-15 16:18:10,025 [INFO]  Saved checkpoint to "imputer_model\model-0003.params"
+2019-04-15 16:18:10,030 [INFO]  Epoch[3] Validation-cross-entropy=1.142940
+2019-04-15 16:18:10,030 [INFO]  Epoch[3] Validation-cross-entropy=1.142940
+2019-04-15 16:18:10,034 [INFO]  Epoch[3] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,034 [INFO]  Epoch[3] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,055 [INFO]  Epoch[4] Batch [0-4]	Speed: 4254.67 samples/sec	cross-entropy=0.982837	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,055 [INFO]  Epoch[4] Batch [0-4]	Speed: 4254.67 samples/sec	cross-entropy=0.982837	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,063 [INFO]  Epoch[4] Train-cross-entropy=0.876183
+2019-04-15 16:18:10,063 [INFO]  Epoch[4] Train-cross-entropy=0.876183
+2019-04-15 16:18:10,064 [INFO]  Epoch[4] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,064 [INFO]  Epoch[4] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,066 [INFO]  Epoch[4] Time cost=0.031
+2019-04-15 16:18:10,066 [INFO]  Epoch[4] Time cost=0.031
+2019-04-15 16:18:10,095 [INFO]  Saved checkpoint to "imputer_model\model-0004.params"
+2019-04-15 16:18:10,095 [INFO]  Saved checkpoint to "imputer_model\model-0004.params"
+2019-04-15 16:18:10,100 [INFO]  Epoch[4] Validation-cross-entropy=1.050345
+2019-04-15 16:18:10,100 [INFO]  Epoch[4] Validation-cross-entropy=1.050345
+2019-04-15 16:18:10,102 [INFO]  Epoch[4] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,102 [INFO]  Epoch[4] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,121 [INFO]  Epoch[5] Batch [0-4]	Speed: 5815.96 samples/sec	cross-entropy=0.571038	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,121 [INFO]  Epoch[5] Batch [0-4]	Speed: 5815.96 samples/sec	cross-entropy=0.571038	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,131 [INFO]  Epoch[5] Train-cross-entropy=0.514202
+2019-04-15 16:18:10,131 [INFO]  Epoch[5] Train-cross-entropy=0.514202
+2019-04-15 16:18:10,133 [INFO]  Epoch[5] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,133 [INFO]  Epoch[5] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,135 [INFO]  Epoch[5] Time cost=0.032
+2019-04-15 16:18:10,135 [INFO]  Epoch[5] Time cost=0.032
+2019-04-15 16:18:10,157 [INFO]  Saved checkpoint to "imputer_model\model-0005.params"
+2019-04-15 16:18:10,157 [INFO]  Saved checkpoint to "imputer_model\model-0005.params"
+2019-04-15 16:18:10,161 [INFO]  Epoch[5] Validation-cross-entropy=0.795112
+2019-04-15 16:18:10,161 [INFO]  Epoch[5] Validation-cross-entropy=0.795112
+2019-04-15 16:18:10,163 [INFO]  Epoch[5] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,163 [INFO]  Epoch[5] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,179 [INFO]  Epoch[6] Batch [0-4]	Speed: 8001.30 samples/sec	cross-entropy=0.421695	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,179 [INFO]  Epoch[6] Batch [0-4]	Speed: 8001.30 samples/sec	cross-entropy=0.421695	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,188 [INFO]  Epoch[6] Train-cross-entropy=0.356839
+2019-04-15 16:18:10,188 [INFO]  Epoch[6] Train-cross-entropy=0.356839
+2019-04-15 16:18:10,190 [INFO]  Epoch[6] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,190 [INFO]  Epoch[6] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,194 [INFO]  Epoch[6] Time cost=0.027
+2019-04-15 16:18:10,194 [INFO]  Epoch[6] Time cost=0.027
+2019-04-15 16:18:10,211 [INFO]  Saved checkpoint to "imputer_model\model-0006.params"
+2019-04-15 16:18:10,211 [INFO]  Saved checkpoint to "imputer_model\model-0006.params"
+2019-04-15 16:18:10,217 [INFO]  Epoch[6] Validation-cross-entropy=0.511512
+2019-04-15 16:18:10,217 [INFO]  Epoch[6] Validation-cross-entropy=0.511512
+2019-04-15 16:18:10,218 [INFO]  Epoch[6] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,218 [INFO]  Epoch[6] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,233 [INFO]  Epoch[7] Batch [0-4]	Speed: 7112.95 samples/sec	cross-entropy=0.293565	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,233 [INFO]  Epoch[7] Batch [0-4]	Speed: 7112.95 samples/sec	cross-entropy=0.293565	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,241 [INFO]  Epoch[7] Train-cross-entropy=0.252395
+2019-04-15 16:18:10,241 [INFO]  Epoch[7] Train-cross-entropy=0.252395
+2019-04-15 16:18:10,242 [INFO]  Epoch[7] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,242 [INFO]  Epoch[7] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,244 [INFO]  Epoch[7] Time cost=0.024
+2019-04-15 16:18:10,244 [INFO]  Epoch[7] Time cost=0.024
+2019-04-15 16:18:10,265 [INFO]  Saved checkpoint to "imputer_model\model-0007.params"
+2019-04-15 16:18:10,265 [INFO]  Saved checkpoint to "imputer_model\model-0007.params"
+2019-04-15 16:18:10,270 [INFO]  Epoch[7] Validation-cross-entropy=0.344886
+2019-04-15 16:18:10,270 [INFO]  Epoch[7] Validation-cross-entropy=0.344886
+2019-04-15 16:18:10,272 [INFO]  Epoch[7] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,272 [INFO]  Epoch[7] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,292 [INFO]  Epoch[8] Batch [0-4]	Speed: 5335.52 samples/sec	cross-entropy=0.228394	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,292 [INFO]  Epoch[8] Batch [0-4]	Speed: 5335.52 samples/sec	cross-entropy=0.228394	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,307 [INFO]  Epoch[8] Train-cross-entropy=0.200584
+2019-04-15 16:18:10,307 [INFO]  Epoch[8] Train-cross-entropy=0.200584
+2019-04-15 16:18:10,308 [INFO]  Epoch[8] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,308 [INFO]  Epoch[8] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,310 [INFO]  Epoch[8] Time cost=0.036
+2019-04-15 16:18:10,310 [INFO]  Epoch[8] Time cost=0.036
+2019-04-15 16:18:10,328 [INFO]  Saved checkpoint to "imputer_model\model-0008.params"
+2019-04-15 16:18:10,328 [INFO]  Saved checkpoint to "imputer_model\model-0008.params"
+2019-04-15 16:18:10,333 [INFO]  Epoch[8] Validation-cross-entropy=0.295103
+2019-04-15 16:18:10,333 [INFO]  Epoch[8] Validation-cross-entropy=0.295103
+2019-04-15 16:18:10,336 [INFO]  Epoch[8] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,336 [INFO]  Epoch[8] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,357 [INFO]  Epoch[9] Batch [0-4]	Speed: 4572.31 samples/sec	cross-entropy=0.172808	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,357 [INFO]  Epoch[9] Batch [0-4]	Speed: 4572.31 samples/sec	cross-entropy=0.172808	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,367 [INFO]  Epoch[9] Train-cross-entropy=0.159359
+2019-04-15 16:18:10,367 [INFO]  Epoch[9] Train-cross-entropy=0.159359
+2019-04-15 16:18:10,370 [INFO]  Epoch[9] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,370 [INFO]  Epoch[9] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,372 [INFO]  Epoch[9] Time cost=0.034
+2019-04-15 16:18:10,372 [INFO]  Epoch[9] Time cost=0.034
+2019-04-15 16:18:10,391 [INFO]  Saved checkpoint to "imputer_model\model-0009.params"
+2019-04-15 16:18:10,391 [INFO]  Saved checkpoint to "imputer_model\model-0009.params"
+2019-04-15 16:18:10,394 [INFO]  Epoch[9] Validation-cross-entropy=0.272035
+2019-04-15 16:18:10,394 [INFO]  Epoch[9] Validation-cross-entropy=0.272035
+2019-04-15 16:18:10,396 [INFO]  Epoch[9] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,396 [INFO]  Epoch[9] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,414 [INFO]  Epoch[10] Batch [0-4]	Speed: 8007.98 samples/sec	cross-entropy=0.146007	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,414 [INFO]  Epoch[10] Batch [0-4]	Speed: 8007.98 samples/sec	cross-entropy=0.146007	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,424 [INFO]  Epoch[10] Train-cross-entropy=0.134973
+2019-04-15 16:18:10,424 [INFO]  Epoch[10] Train-cross-entropy=0.134973
+2019-04-15 16:18:10,425 [INFO]  Epoch[10] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,425 [INFO]  Epoch[10] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,426 [INFO]  Epoch[10] Time cost=0.025
+2019-04-15 16:18:10,426 [INFO]  Epoch[10] Time cost=0.025
+2019-04-15 16:18:10,441 [INFO]  Saved checkpoint to "imputer_model\model-0010.params"
+2019-04-15 16:18:10,441 [INFO]  Saved checkpoint to "imputer_model\model-0010.params"
+2019-04-15 16:18:10,445 [INFO]  Epoch[10] Validation-cross-entropy=0.221888
+2019-04-15 16:18:10,445 [INFO]  Epoch[10] Validation-cross-entropy=0.221888
+2019-04-15 16:18:10,447 [INFO]  Epoch[10] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,447 [INFO]  Epoch[10] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,461 [INFO]  Epoch[11] Batch [0-4]	Speed: 7110.50 samples/sec	cross-entropy=0.125253	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,461 [INFO]  Epoch[11] Batch [0-4]	Speed: 7110.50 samples/sec	cross-entropy=0.125253	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,470 [INFO]  Epoch[11] Train-cross-entropy=0.115115
+2019-04-15 16:18:10,470 [INFO]  Epoch[11] Train-cross-entropy=0.115115
+2019-04-15 16:18:10,472 [INFO]  Epoch[11] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,472 [INFO]  Epoch[11] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,476 [INFO]  Epoch[11] Time cost=0.028
+2019-04-15 16:18:10,476 [INFO]  Epoch[11] Time cost=0.028
+2019-04-15 16:18:10,496 [INFO]  Saved checkpoint to "imputer_model\model-0011.params"
+2019-04-15 16:18:10,496 [INFO]  Saved checkpoint to "imputer_model\model-0011.params"
+2019-04-15 16:18:10,501 [INFO]  Epoch[11] Validation-cross-entropy=0.212566
+2019-04-15 16:18:10,501 [INFO]  Epoch[11] Validation-cross-entropy=0.212566
+2019-04-15 16:18:10,503 [INFO]  Epoch[11] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,503 [INFO]  Epoch[11] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,519 [INFO]  Epoch[12] Batch [0-4]	Speed: 5817.59 samples/sec	cross-entropy=0.109295	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,519 [INFO]  Epoch[12] Batch [0-4]	Speed: 5817.59 samples/sec	cross-entropy=0.109295	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,526 [INFO]  Epoch[12] Train-cross-entropy=0.099848
+2019-04-15 16:18:10,526 [INFO]  Epoch[12] Train-cross-entropy=0.099848
+2019-04-15 16:18:10,527 [INFO]  Epoch[12] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,527 [INFO]  Epoch[12] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,531 [INFO]  Epoch[12] Time cost=0.027
+2019-04-15 16:18:10,531 [INFO]  Epoch[12] Time cost=0.027
+2019-04-15 16:18:10,552 [INFO]  Saved checkpoint to "imputer_model\model-0012.params"
+2019-04-15 16:18:10,552 [INFO]  Saved checkpoint to "imputer_model\model-0012.params"
+2019-04-15 16:18:10,557 [INFO]  Epoch[12] Validation-cross-entropy=0.220640
+2019-04-15 16:18:10,557 [INFO]  Epoch[12] Validation-cross-entropy=0.220640
+2019-04-15 16:18:10,558 [INFO]  Epoch[12] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,558 [INFO]  Epoch[12] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,572 [INFO]  Epoch[13] Batch [0-4]	Speed: 7997.00 samples/sec	cross-entropy=0.097848	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,572 [INFO]  Epoch[13] Batch [0-4]	Speed: 7997.00 samples/sec	cross-entropy=0.097848	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,583 [INFO]  Epoch[13] Train-cross-entropy=0.087360
+2019-04-15 16:18:10,583 [INFO]  Epoch[13] Train-cross-entropy=0.087360
+2019-04-15 16:18:10,584 [INFO]  Epoch[13] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,584 [INFO]  Epoch[13] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,586 [INFO]  Epoch[13] Time cost=0.026
+2019-04-15 16:18:10,586 [INFO]  Epoch[13] Time cost=0.026
+2019-04-15 16:18:10,607 [INFO]  Saved checkpoint to "imputer_model\model-0013.params"
+2019-04-15 16:18:10,607 [INFO]  Saved checkpoint to "imputer_model\model-0013.params"
+2019-04-15 16:18:10,612 [INFO]  Epoch[13] Validation-cross-entropy=0.203319
+2019-04-15 16:18:10,612 [INFO]  Epoch[13] Validation-cross-entropy=0.203319
+2019-04-15 16:18:10,613 [INFO]  Epoch[13] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,613 [INFO]  Epoch[13] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,637 [INFO]  Epoch[14] Batch [0-4]	Speed: 4571.76 samples/sec	cross-entropy=0.088226	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,637 [INFO]  Epoch[14] Batch [0-4]	Speed: 4571.76 samples/sec	cross-entropy=0.088226	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,645 [INFO]  Epoch[14] Train-cross-entropy=0.077504
+2019-04-15 16:18:10,645 [INFO]  Epoch[14] Train-cross-entropy=0.077504
+2019-04-15 16:18:10,646 [INFO]  Epoch[14] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,646 [INFO]  Epoch[14] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,648 [INFO]  Epoch[14] Time cost=0.031
+2019-04-15 16:18:10,648 [INFO]  Epoch[14] Time cost=0.031
+2019-04-15 16:18:10,675 [INFO]  Saved checkpoint to "imputer_model\model-0014.params"
+2019-04-15 16:18:10,675 [INFO]  Saved checkpoint to "imputer_model\model-0014.params"
+2019-04-15 16:18:10,679 [INFO]  Epoch[14] Validation-cross-entropy=0.195480
+2019-04-15 16:18:10,679 [INFO]  Epoch[14] Validation-cross-entropy=0.195480
+2019-04-15 16:18:10,681 [INFO]  Epoch[14] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,681 [INFO]  Epoch[14] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,697 [INFO]  Epoch[15] Batch [0-4]	Speed: 6393.76 samples/sec	cross-entropy=0.078746	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,697 [INFO]  Epoch[15] Batch [0-4]	Speed: 6393.76 samples/sec	cross-entropy=0.078746	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,705 [INFO]  Epoch[15] Train-cross-entropy=0.068775
+2019-04-15 16:18:10,705 [INFO]  Epoch[15] Train-cross-entropy=0.068775
+2019-04-15 16:18:10,706 [INFO]  Epoch[15] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,706 [INFO]  Epoch[15] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,709 [INFO]  Epoch[15] Time cost=0.026
+2019-04-15 16:18:10,709 [INFO]  Epoch[15] Time cost=0.026
+2019-04-15 16:18:10,767 [INFO]  Saved checkpoint to "imputer_model\model-0015.params"
+2019-04-15 16:18:10,767 [INFO]  Saved checkpoint to "imputer_model\model-0015.params"
+2019-04-15 16:18:10,770 [INFO]  Epoch[15] Validation-cross-entropy=0.191108
+2019-04-15 16:18:10,770 [INFO]  Epoch[15] Validation-cross-entropy=0.191108
+2019-04-15 16:18:10,771 [INFO]  Epoch[15] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,771 [INFO]  Epoch[15] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,785 [INFO]  Epoch[16] Batch [0-4]	Speed: 9143.21 samples/sec	cross-entropy=0.070686	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,785 [INFO]  Epoch[16] Batch [0-4]	Speed: 9143.21 samples/sec	cross-entropy=0.070686	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,791 [INFO]  Epoch[16] Train-cross-entropy=0.061265
+2019-04-15 16:18:10,791 [INFO]  Epoch[16] Train-cross-entropy=0.061265
+2019-04-15 16:18:10,796 [INFO]  Epoch[16] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,796 [INFO]  Epoch[16] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,800 [INFO]  Epoch[16] Time cost=0.027
+2019-04-15 16:18:10,800 [INFO]  Epoch[16] Time cost=0.027
+2019-04-15 16:18:10,817 [INFO]  Saved checkpoint to "imputer_model\model-0016.params"
+2019-04-15 16:18:10,817 [INFO]  Saved checkpoint to "imputer_model\model-0016.params"
+2019-04-15 16:18:10,821 [INFO]  Epoch[16] Validation-cross-entropy=0.178247
+2019-04-15 16:18:10,821 [INFO]  Epoch[16] Validation-cross-entropy=0.178247
+2019-04-15 16:18:10,823 [INFO]  Epoch[16] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,823 [INFO]  Epoch[16] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,842 [INFO]  Epoch[17] Batch [0-4]	Speed: 8007.74 samples/sec	cross-entropy=0.063400	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,842 [INFO]  Epoch[17] Batch [0-4]	Speed: 8007.74 samples/sec	cross-entropy=0.063400	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,848 [INFO]  Epoch[17] Train-cross-entropy=0.054626
+2019-04-15 16:18:10,848 [INFO]  Epoch[17] Train-cross-entropy=0.054626
+2019-04-15 16:18:10,850 [INFO]  Epoch[17] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,850 [INFO]  Epoch[17] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,852 [INFO]  Epoch[17] Time cost=0.028
+2019-04-15 16:18:10,852 [INFO]  Epoch[17] Time cost=0.028
+2019-04-15 16:18:10,876 [INFO]  Saved checkpoint to "imputer_model\model-0017.params"
+2019-04-15 16:18:10,876 [INFO]  Saved checkpoint to "imputer_model\model-0017.params"
+2019-04-15 16:18:10,881 [INFO]  Epoch[17] Validation-cross-entropy=0.168302
+2019-04-15 16:18:10,881 [INFO]  Epoch[17] Validation-cross-entropy=0.168302
+2019-04-15 16:18:10,884 [INFO]  Epoch[17] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,884 [INFO]  Epoch[17] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,898 [INFO]  Epoch[18] Batch [0-4]	Speed: 9144.14 samples/sec	cross-entropy=0.057132	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,898 [INFO]  Epoch[18] Batch [0-4]	Speed: 9144.14 samples/sec	cross-entropy=0.057132	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,912 [INFO]  Epoch[18] Train-cross-entropy=0.049001
+2019-04-15 16:18:10,912 [INFO]  Epoch[18] Train-cross-entropy=0.049001
+2019-04-15 16:18:10,914 [INFO]  Epoch[18] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,914 [INFO]  Epoch[18] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,919 [INFO]  Epoch[18] Time cost=0.033
+2019-04-15 16:18:10,919 [INFO]  Epoch[18] Time cost=0.033
+2019-04-15 16:18:10,937 [INFO]  Saved checkpoint to "imputer_model\model-0018.params"
+2019-04-15 16:18:10,937 [INFO]  Saved checkpoint to "imputer_model\model-0018.params"
+2019-04-15 16:18:10,943 [INFO]  Epoch[18] Validation-cross-entropy=0.161745
+2019-04-15 16:18:10,943 [INFO]  Epoch[18] Validation-cross-entropy=0.161745
+2019-04-15 16:18:10,944 [INFO]  Epoch[18] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,944 [INFO]  Epoch[18] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,963 [INFO]  Epoch[19] Batch [0-4]	Speed: 5332.87 samples/sec	cross-entropy=0.051719	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,963 [INFO]  Epoch[19] Batch [0-4]	Speed: 5332.87 samples/sec	cross-entropy=0.051719	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,972 [INFO]  Epoch[19] Train-cross-entropy=0.044119
+2019-04-15 16:18:10,972 [INFO]  Epoch[19] Train-cross-entropy=0.044119
+2019-04-15 16:18:10,974 [INFO]  Epoch[19] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,974 [INFO]  Epoch[19] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:10,976 [INFO]  Epoch[19] Time cost=0.030
+2019-04-15 16:18:10,976 [INFO]  Epoch[19] Time cost=0.030
+2019-04-15 16:18:11,008 [INFO]  Saved checkpoint to "imputer_model\model-0019.params"
+2019-04-15 16:18:11,008 [INFO]  Saved checkpoint to "imputer_model\model-0019.params"
+2019-04-15 16:18:11,013 [INFO]  Epoch[19] Validation-cross-entropy=0.152849
+2019-04-15 16:18:11,013 [INFO]  Epoch[19] Validation-cross-entropy=0.152849
+2019-04-15 16:18:11,018 [INFO]  Epoch[19] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,018 [INFO]  Epoch[19] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,036 [INFO]  Epoch[20] Batch [0-4]	Speed: 5815.33 samples/sec	cross-entropy=0.046988	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,036 [INFO]  Epoch[20] Batch [0-4]	Speed: 5815.33 samples/sec	cross-entropy=0.046988	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,048 [INFO]  Epoch[20] Train-cross-entropy=0.039923
+2019-04-15 16:18:11,048 [INFO]  Epoch[20] Train-cross-entropy=0.039923
+2019-04-15 16:18:11,052 [INFO]  Epoch[20] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,052 [INFO]  Epoch[20] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,054 [INFO]  Epoch[20] Time cost=0.035
+2019-04-15 16:18:11,054 [INFO]  Epoch[20] Time cost=0.035
+2019-04-15 16:18:11,074 [INFO]  Saved checkpoint to "imputer_model\model-0020.params"
+2019-04-15 16:18:11,074 [INFO]  Saved checkpoint to "imputer_model\model-0020.params"
+2019-04-15 16:18:11,078 [INFO]  Epoch[20] Validation-cross-entropy=0.146253
+2019-04-15 16:18:11,078 [INFO]  Epoch[20] Validation-cross-entropy=0.146253
+2019-04-15 16:18:11,081 [INFO]  Epoch[20] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,081 [INFO]  Epoch[20] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,096 [INFO]  Epoch[21] Batch [0-4]	Speed: 7997.96 samples/sec	cross-entropy=0.042766	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,096 [INFO]  Epoch[21] Batch [0-4]	Speed: 7997.96 samples/sec	cross-entropy=0.042766	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,106 [INFO]  Epoch[21] Train-cross-entropy=0.036245
+2019-04-15 16:18:11,106 [INFO]  Epoch[21] Train-cross-entropy=0.036245
+2019-04-15 16:18:11,108 [INFO]  Epoch[21] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,108 [INFO]  Epoch[21] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,110 [INFO]  Epoch[21] Time cost=0.026
+2019-04-15 16:18:11,110 [INFO]  Epoch[21] Time cost=0.026
+2019-04-15 16:18:11,129 [INFO]  Saved checkpoint to "imputer_model\model-0021.params"
+2019-04-15 16:18:11,129 [INFO]  Saved checkpoint to "imputer_model\model-0021.params"
+2019-04-15 16:18:11,134 [INFO]  Epoch[21] Validation-cross-entropy=0.139328
+2019-04-15 16:18:11,134 [INFO]  Epoch[21] Validation-cross-entropy=0.139328
+2019-04-15 16:18:11,136 [INFO]  Epoch[21] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,136 [INFO]  Epoch[21] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,153 [INFO]  Epoch[22] Batch [0-4]	Speed: 5820.12 samples/sec	cross-entropy=0.039132	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,153 [INFO]  Epoch[22] Batch [0-4]	Speed: 5820.12 samples/sec	cross-entropy=0.039132	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,158 [INFO]  Epoch[22] Train-cross-entropy=0.033088
+2019-04-15 16:18:11,158 [INFO]  Epoch[22] Train-cross-entropy=0.033088
+2019-04-15 16:18:11,160 [INFO]  Epoch[22] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,160 [INFO]  Epoch[22] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,163 [INFO]  Epoch[22] Time cost=0.026
+2019-04-15 16:18:11,163 [INFO]  Epoch[22] Time cost=0.026
+2019-04-15 16:18:11,185 [INFO]  Saved checkpoint to "imputer_model\model-0022.params"
+2019-04-15 16:18:11,185 [INFO]  Saved checkpoint to "imputer_model\model-0022.params"
+2019-04-15 16:18:11,190 [INFO]  Epoch[22] Validation-cross-entropy=0.133445
+2019-04-15 16:18:11,190 [INFO]  Epoch[22] Validation-cross-entropy=0.133445
+2019-04-15 16:18:11,192 [INFO]  Epoch[22] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,192 [INFO]  Epoch[22] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,208 [INFO]  Epoch[23] Batch [0-4]	Speed: 8056.29 samples/sec	cross-entropy=0.035837	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,208 [INFO]  Epoch[23] Batch [0-4]	Speed: 8056.29 samples/sec	cross-entropy=0.035837	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,218 [INFO]  Epoch[23] Train-cross-entropy=0.030254
+2019-04-15 16:18:11,218 [INFO]  Epoch[23] Train-cross-entropy=0.030254
+2019-04-15 16:18:11,219 [INFO]  Epoch[23] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,219 [INFO]  Epoch[23] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,221 [INFO]  Epoch[23] Time cost=0.026
+2019-04-15 16:18:11,221 [INFO]  Epoch[23] Time cost=0.026
+2019-04-15 16:18:11,241 [INFO]  Saved checkpoint to "imputer_model\model-0023.params"
+2019-04-15 16:18:11,241 [INFO]  Saved checkpoint to "imputer_model\model-0023.params"
+2019-04-15 16:18:11,244 [INFO]  Epoch[23] Validation-cross-entropy=0.127930
+2019-04-15 16:18:11,244 [INFO]  Epoch[23] Validation-cross-entropy=0.127930
+2019-04-15 16:18:11,246 [INFO]  Epoch[23] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,246 [INFO]  Epoch[23] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,263 [INFO]  Epoch[24] Batch [0-4]	Speed: 7112.76 samples/sec	cross-entropy=0.032884	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,263 [INFO]  Epoch[24] Batch [0-4]	Speed: 7112.76 samples/sec	cross-entropy=0.032884	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,270 [INFO]  Epoch[24] Train-cross-entropy=0.027715
+2019-04-15 16:18:11,270 [INFO]  Epoch[24] Train-cross-entropy=0.027715
+2019-04-15 16:18:11,273 [INFO]  Epoch[24] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,273 [INFO]  Epoch[24] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,277 [INFO]  Epoch[24] Time cost=0.030
+2019-04-15 16:18:11,277 [INFO]  Epoch[24] Time cost=0.030
+2019-04-15 16:18:11,295 [INFO]  Saved checkpoint to "imputer_model\model-0024.params"
+2019-04-15 16:18:11,295 [INFO]  Saved checkpoint to "imputer_model\model-0024.params"
+2019-04-15 16:18:11,300 [INFO]  Epoch[24] Validation-cross-entropy=0.122583
+2019-04-15 16:18:11,300 [INFO]  Epoch[24] Validation-cross-entropy=0.122583
+2019-04-15 16:18:11,302 [INFO]  Epoch[24] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,302 [INFO]  Epoch[24] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,321 [INFO]  Epoch[25] Batch [0-4]	Speed: 5332.87 samples/sec	cross-entropy=0.030141	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,321 [INFO]  Epoch[25] Batch [0-4]	Speed: 5332.87 samples/sec	cross-entropy=0.030141	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,327 [INFO]  Epoch[25] Train-cross-entropy=0.025392
+2019-04-15 16:18:11,327 [INFO]  Epoch[25] Train-cross-entropy=0.025392
+2019-04-15 16:18:11,329 [INFO]  Epoch[25] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,329 [INFO]  Epoch[25] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,332 [INFO]  Epoch[25] Time cost=0.028
+2019-04-15 16:18:11,332 [INFO]  Epoch[25] Time cost=0.028
+2019-04-15 16:18:11,350 [INFO]  Saved checkpoint to "imputer_model\model-0025.params"
+2019-04-15 16:18:11,350 [INFO]  Saved checkpoint to "imputer_model\model-0025.params"
+2019-04-15 16:18:11,354 [INFO]  Epoch[25] Validation-cross-entropy=0.117430
+2019-04-15 16:18:11,354 [INFO]  Epoch[25] Validation-cross-entropy=0.117430
+2019-04-15 16:18:11,357 [INFO]  Epoch[25] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,357 [INFO]  Epoch[25] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,375 [INFO]  Epoch[26] Batch [0-4]	Speed: 9147.57 samples/sec	cross-entropy=0.027711	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,375 [INFO]  Epoch[26] Batch [0-4]	Speed: 9147.57 samples/sec	cross-entropy=0.027711	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,385 [INFO]  Epoch[26] Train-cross-entropy=0.023356
+2019-04-15 16:18:11,385 [INFO]  Epoch[26] Train-cross-entropy=0.023356
+2019-04-15 16:18:11,386 [INFO]  Epoch[26] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,386 [INFO]  Epoch[26] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,388 [INFO]  Epoch[26] Time cost=0.028
+2019-04-15 16:18:11,388 [INFO]  Epoch[26] Time cost=0.028
+2019-04-15 16:18:11,409 [INFO]  Saved checkpoint to "imputer_model\model-0026.params"
+2019-04-15 16:18:11,409 [INFO]  Saved checkpoint to "imputer_model\model-0026.params"
+2019-04-15 16:18:11,413 [INFO]  Epoch[26] Validation-cross-entropy=0.113206
+2019-04-15 16:18:11,413 [INFO]  Epoch[26] Validation-cross-entropy=0.113206
+2019-04-15 16:18:11,415 [INFO]  Epoch[26] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,415 [INFO]  Epoch[26] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,434 [INFO]  Epoch[27] Batch [0-4]	Speed: 5326.21 samples/sec	cross-entropy=0.025466	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,434 [INFO]  Epoch[27] Batch [0-4]	Speed: 5326.21 samples/sec	cross-entropy=0.025466	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,441 [INFO]  Epoch[27] Train-cross-entropy=0.021498
+2019-04-15 16:18:11,441 [INFO]  Epoch[27] Train-cross-entropy=0.021498
+2019-04-15 16:18:11,442 [INFO]  Epoch[27] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,442 [INFO]  Epoch[27] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,444 [INFO]  Epoch[27] Time cost=0.025
+2019-04-15 16:18:11,444 [INFO]  Epoch[27] Time cost=0.025
+2019-04-15 16:18:11,469 [INFO]  Saved checkpoint to "imputer_model\model-0027.params"
+2019-04-15 16:18:11,469 [INFO]  Saved checkpoint to "imputer_model\model-0027.params"
+2019-04-15 16:18:11,472 [INFO]  Epoch[27] Validation-cross-entropy=0.108449
+2019-04-15 16:18:11,472 [INFO]  Epoch[27] Validation-cross-entropy=0.108449
+2019-04-15 16:18:11,474 [INFO]  Epoch[27] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,474 [INFO]  Epoch[27] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,497 [INFO]  Epoch[28] Batch [0-4]	Speed: 4573.71 samples/sec	cross-entropy=0.023435	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,497 [INFO]  Epoch[28] Batch [0-4]	Speed: 4573.71 samples/sec	cross-entropy=0.023435	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,505 [INFO]  Epoch[28] Train-cross-entropy=0.019834
+2019-04-15 16:18:11,505 [INFO]  Epoch[28] Train-cross-entropy=0.019834
+2019-04-15 16:18:11,507 [INFO]  Epoch[28] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,507 [INFO]  Epoch[28] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,508 [INFO]  Epoch[28] Time cost=0.033
+2019-04-15 16:18:11,508 [INFO]  Epoch[28] Time cost=0.033
+2019-04-15 16:18:11,528 [INFO]  Saved checkpoint to "imputer_model\model-0028.params"
+2019-04-15 16:18:11,528 [INFO]  Saved checkpoint to "imputer_model\model-0028.params"
+2019-04-15 16:18:11,533 [INFO]  Epoch[28] Validation-cross-entropy=0.104428
+2019-04-15 16:18:11,533 [INFO]  Epoch[28] Validation-cross-entropy=0.104428
+2019-04-15 16:18:11,536 [INFO]  Epoch[28] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,536 [INFO]  Epoch[28] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,554 [INFO]  Epoch[29] Batch [0-4]	Speed: 6401.84 samples/sec	cross-entropy=0.021559	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,554 [INFO]  Epoch[29] Batch [0-4]	Speed: 6401.84 samples/sec	cross-entropy=0.021559	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,564 [INFO]  Epoch[29] Train-cross-entropy=0.018305
+2019-04-15 16:18:11,564 [INFO]  Epoch[29] Train-cross-entropy=0.018305
+2019-04-15 16:18:11,566 [INFO]  Epoch[29] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,566 [INFO]  Epoch[29] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,569 [INFO]  Epoch[29] Time cost=0.031
+2019-04-15 16:18:11,569 [INFO]  Epoch[29] Time cost=0.031
+2019-04-15 16:18:11,588 [INFO]  Saved checkpoint to "imputer_model\model-0029.params"
+2019-04-15 16:18:11,588 [INFO]  Saved checkpoint to "imputer_model\model-0029.params"
+2019-04-15 16:18:11,594 [INFO]  Epoch[29] Validation-cross-entropy=0.100670
+2019-04-15 16:18:11,594 [INFO]  Epoch[29] Validation-cross-entropy=0.100670
+2019-04-15 16:18:11,597 [INFO]  Epoch[29] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,597 [INFO]  Epoch[29] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,616 [INFO]  Epoch[30] Batch [0-4]	Speed: 6399.85 samples/sec	cross-entropy=0.019862	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,616 [INFO]  Epoch[30] Batch [0-4]	Speed: 6399.85 samples/sec	cross-entropy=0.019862	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,626 [INFO]  Epoch[30] Train-cross-entropy=0.016921
+2019-04-15 16:18:11,626 [INFO]  Epoch[30] Train-cross-entropy=0.016921
+2019-04-15 16:18:11,628 [INFO]  Epoch[30] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,628 [INFO]  Epoch[30] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,630 [INFO]  Epoch[30] Time cost=0.029
+2019-04-15 16:18:11,630 [INFO]  Epoch[30] Time cost=0.029
+2019-04-15 16:18:11,646 [INFO]  Saved checkpoint to "imputer_model\model-0030.params"
+2019-04-15 16:18:11,646 [INFO]  Saved checkpoint to "imputer_model\model-0030.params"
+2019-04-15 16:18:11,653 [INFO]  Epoch[30] Validation-cross-entropy=0.097070
+2019-04-15 16:18:11,653 [INFO]  Epoch[30] Validation-cross-entropy=0.097070
+2019-04-15 16:18:11,656 [INFO]  Epoch[30] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,656 [INFO]  Epoch[30] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,675 [INFO]  Epoch[31] Batch [0-4]	Speed: 6399.55 samples/sec	cross-entropy=0.018354	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,675 [INFO]  Epoch[31] Batch [0-4]	Speed: 6399.55 samples/sec	cross-entropy=0.018354	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,683 [INFO]  Epoch[31] Train-cross-entropy=0.015695
+2019-04-15 16:18:11,683 [INFO]  Epoch[31] Train-cross-entropy=0.015695
+2019-04-15 16:18:11,687 [INFO]  Epoch[31] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,687 [INFO]  Epoch[31] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,690 [INFO]  Epoch[31] Time cost=0.031
+2019-04-15 16:18:11,690 [INFO]  Epoch[31] Time cost=0.031
+2019-04-15 16:18:11,707 [INFO]  Saved checkpoint to "imputer_model\model-0031.params"
+2019-04-15 16:18:11,707 [INFO]  Saved checkpoint to "imputer_model\model-0031.params"
+2019-04-15 16:18:11,711 [INFO]  Epoch[31] Validation-cross-entropy=0.093733
+2019-04-15 16:18:11,711 [INFO]  Epoch[31] Validation-cross-entropy=0.093733
+2019-04-15 16:18:11,714 [INFO]  Epoch[31] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,714 [INFO]  Epoch[31] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,729 [INFO]  Epoch[32] Batch [0-4]	Speed: 9143.52 samples/sec	cross-entropy=0.016993	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,729 [INFO]  Epoch[32] Batch [0-4]	Speed: 9143.52 samples/sec	cross-entropy=0.016993	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,738 [INFO]  Epoch[32] Train-cross-entropy=0.014584
+2019-04-15 16:18:11,738 [INFO]  Epoch[32] Train-cross-entropy=0.014584
+2019-04-15 16:18:11,739 [INFO]  Epoch[32] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,739 [INFO]  Epoch[32] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,741 [INFO]  Epoch[32] Time cost=0.024
+2019-04-15 16:18:11,741 [INFO]  Epoch[32] Time cost=0.024
+2019-04-15 16:18:11,759 [INFO]  Saved checkpoint to "imputer_model\model-0032.params"
+2019-04-15 16:18:11,759 [INFO]  Saved checkpoint to "imputer_model\model-0032.params"
+2019-04-15 16:18:11,764 [INFO]  Epoch[32] Validation-cross-entropy=0.090726
+2019-04-15 16:18:11,764 [INFO]  Epoch[32] Validation-cross-entropy=0.090726
+2019-04-15 16:18:11,766 [INFO]  Epoch[32] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,766 [INFO]  Epoch[32] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,782 [INFO]  Epoch[33] Batch [0-4]	Speed: 7985.82 samples/sec	cross-entropy=0.015766	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,782 [INFO]  Epoch[33] Batch [0-4]	Speed: 7985.82 samples/sec	cross-entropy=0.015766	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,789 [INFO]  Epoch[33] Train-cross-entropy=0.013580
+2019-04-15 16:18:11,789 [INFO]  Epoch[33] Train-cross-entropy=0.013580
+2019-04-15 16:18:11,791 [INFO]  Epoch[33] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,791 [INFO]  Epoch[33] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,793 [INFO]  Epoch[33] Time cost=0.024
+2019-04-15 16:18:11,793 [INFO]  Epoch[33] Time cost=0.024
+2019-04-15 16:18:11,813 [INFO]  Saved checkpoint to "imputer_model\model-0033.params"
+2019-04-15 16:18:11,813 [INFO]  Saved checkpoint to "imputer_model\model-0033.params"
+2019-04-15 16:18:11,819 [INFO]  Epoch[33] Validation-cross-entropy=0.087835
+2019-04-15 16:18:11,819 [INFO]  Epoch[33] Validation-cross-entropy=0.087835
+2019-04-15 16:18:11,821 [INFO]  Epoch[33] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,821 [INFO]  Epoch[33] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,841 [INFO]  Epoch[34] Batch [0-4]	Speed: 4921.72 samples/sec	cross-entropy=0.014640	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,841 [INFO]  Epoch[34] Batch [0-4]	Speed: 4921.72 samples/sec	cross-entropy=0.014640	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,850 [INFO]  Epoch[34] Train-cross-entropy=0.012662
+2019-04-15 16:18:11,850 [INFO]  Epoch[34] Train-cross-entropy=0.012662
+2019-04-15 16:18:11,853 [INFO]  Epoch[34] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,853 [INFO]  Epoch[34] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,859 [INFO]  Epoch[34] Time cost=0.034
+2019-04-15 16:18:11,859 [INFO]  Epoch[34] Time cost=0.034
+2019-04-15 16:18:11,881 [INFO]  Saved checkpoint to "imputer_model\model-0034.params"
+2019-04-15 16:18:11,881 [INFO]  Saved checkpoint to "imputer_model\model-0034.params"
+2019-04-15 16:18:11,889 [INFO]  Epoch[34] Validation-cross-entropy=0.085275
+2019-04-15 16:18:11,889 [INFO]  Epoch[34] Validation-cross-entropy=0.085275
+2019-04-15 16:18:11,890 [INFO]  Epoch[34] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,890 [INFO]  Epoch[34] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,906 [INFO]  Epoch[35] Batch [0-4]	Speed: 6401.07 samples/sec	cross-entropy=0.013618	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,906 [INFO]  Epoch[35] Batch [0-4]	Speed: 6401.07 samples/sec	cross-entropy=0.013618	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,923 [INFO]  Epoch[35] Train-cross-entropy=0.011824
+2019-04-15 16:18:11,923 [INFO]  Epoch[35] Train-cross-entropy=0.011824
+2019-04-15 16:18:11,924 [INFO]  Epoch[35] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,924 [INFO]  Epoch[35] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,926 [INFO]  Epoch[35] Time cost=0.034
+2019-04-15 16:18:11,926 [INFO]  Epoch[35] Time cost=0.034
+2019-04-15 16:18:11,946 [INFO]  Saved checkpoint to "imputer_model\model-0035.params"
+2019-04-15 16:18:11,946 [INFO]  Saved checkpoint to "imputer_model\model-0035.params"
+2019-04-15 16:18:11,957 [INFO]  Epoch[35] Validation-cross-entropy=0.082764
+2019-04-15 16:18:11,957 [INFO]  Epoch[35] Validation-cross-entropy=0.082764
+2019-04-15 16:18:11,959 [INFO]  Epoch[35] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,959 [INFO]  Epoch[35] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,973 [INFO]  Epoch[36] Batch [0-4]	Speed: 8002.25 samples/sec	cross-entropy=0.012686	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,973 [INFO]  Epoch[36] Batch [0-4]	Speed: 8002.25 samples/sec	cross-entropy=0.012686	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,980 [INFO]  Epoch[36] Train-cross-entropy=0.011051
+2019-04-15 16:18:11,980 [INFO]  Epoch[36] Train-cross-entropy=0.011051
+2019-04-15 16:18:11,983 [INFO]  Epoch[36] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,983 [INFO]  Epoch[36] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:11,987 [INFO]  Epoch[36] Time cost=0.027
+2019-04-15 16:18:11,987 [INFO]  Epoch[36] Time cost=0.027
+2019-04-15 16:18:12,010 [INFO]  Saved checkpoint to "imputer_model\model-0036.params"
+2019-04-15 16:18:12,010 [INFO]  Saved checkpoint to "imputer_model\model-0036.params"
+2019-04-15 16:18:12,017 [INFO]  Epoch[36] Validation-cross-entropy=0.080460
+2019-04-15 16:18:12,017 [INFO]  Epoch[36] Validation-cross-entropy=0.080460
+2019-04-15 16:18:12,019 [INFO]  Epoch[36] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,019 [INFO]  Epoch[36] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,032 [INFO]  Epoch[37] Batch [0-4]	Speed: 9144.77 samples/sec	cross-entropy=0.011846	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,032 [INFO]  Epoch[37] Batch [0-4]	Speed: 9144.77 samples/sec	cross-entropy=0.011846	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,043 [INFO]  Epoch[37] Train-cross-entropy=0.010353
+2019-04-15 16:18:12,043 [INFO]  Epoch[37] Train-cross-entropy=0.010353
+2019-04-15 16:18:12,045 [INFO]  Epoch[37] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,045 [INFO]  Epoch[37] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,049 [INFO]  Epoch[37] Time cost=0.027
+2019-04-15 16:18:12,049 [INFO]  Epoch[37] Time cost=0.027
+2019-04-15 16:18:12,067 [INFO]  Saved checkpoint to "imputer_model\model-0037.params"
+2019-04-15 16:18:12,067 [INFO]  Saved checkpoint to "imputer_model\model-0037.params"
+2019-04-15 16:18:12,071 [INFO]  Epoch[37] Validation-cross-entropy=0.078259
+2019-04-15 16:18:12,071 [INFO]  Epoch[37] Validation-cross-entropy=0.078259
+2019-04-15 16:18:12,073 [INFO]  Epoch[37] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,073 [INFO]  Epoch[37] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,091 [INFO]  Epoch[38] Batch [0-4]	Speed: 4923.70 samples/sec	cross-entropy=0.011071	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,091 [INFO]  Epoch[38] Batch [0-4]	Speed: 4923.70 samples/sec	cross-entropy=0.011071	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,099 [INFO]  Epoch[38] Train-cross-entropy=0.009709
+2019-04-15 16:18:12,099 [INFO]  Epoch[38] Train-cross-entropy=0.009709
+2019-04-15 16:18:12,101 [INFO]  Epoch[38] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,101 [INFO]  Epoch[38] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,108 [INFO]  Epoch[38] Time cost=0.033
+2019-04-15 16:18:12,108 [INFO]  Epoch[38] Time cost=0.033
+2019-04-15 16:18:12,130 [INFO]  Saved checkpoint to "imputer_model\model-0038.params"
+2019-04-15 16:18:12,130 [INFO]  Saved checkpoint to "imputer_model\model-0038.params"
+2019-04-15 16:18:12,134 [INFO]  Epoch[38] Validation-cross-entropy=0.076094
+2019-04-15 16:18:12,134 [INFO]  Epoch[38] Validation-cross-entropy=0.076094
+2019-04-15 16:18:12,137 [INFO]  Epoch[38] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,137 [INFO]  Epoch[38] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,155 [INFO]  Epoch[39] Batch [0-4]	Speed: 5334.14 samples/sec	cross-entropy=0.010357	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,155 [INFO]  Epoch[39] Batch [0-4]	Speed: 5334.14 samples/sec	cross-entropy=0.010357	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,161 [INFO]  Epoch[39] Train-cross-entropy=0.009117
+2019-04-15 16:18:12,161 [INFO]  Epoch[39] Train-cross-entropy=0.009117
+2019-04-15 16:18:12,163 [INFO]  Epoch[39] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,163 [INFO]  Epoch[39] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,165 [INFO]  Epoch[39] Time cost=0.026
+2019-04-15 16:18:12,165 [INFO]  Epoch[39] Time cost=0.026
+2019-04-15 16:18:12,186 [INFO]  Saved checkpoint to "imputer_model\model-0039.params"
+2019-04-15 16:18:12,186 [INFO]  Saved checkpoint to "imputer_model\model-0039.params"
+2019-04-15 16:18:12,190 [INFO]  Epoch[39] Validation-cross-entropy=0.074222
+2019-04-15 16:18:12,190 [INFO]  Epoch[39] Validation-cross-entropy=0.074222
+2019-04-15 16:18:12,191 [INFO]  Epoch[39] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,191 [INFO]  Epoch[39] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,208 [INFO]  Epoch[40] Batch [0-4]	Speed: 7999.15 samples/sec	cross-entropy=0.009708	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,208 [INFO]  Epoch[40] Batch [0-4]	Speed: 7999.15 samples/sec	cross-entropy=0.009708	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,220 [INFO]  Epoch[40] Train-cross-entropy=0.008583
+2019-04-15 16:18:12,220 [INFO]  Epoch[40] Train-cross-entropy=0.008583
+2019-04-15 16:18:12,222 [INFO]  Epoch[40] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,222 [INFO]  Epoch[40] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,224 [INFO]  Epoch[40] Time cost=0.028
+2019-04-15 16:18:12,224 [INFO]  Epoch[40] Time cost=0.028
+2019-04-15 16:18:12,245 [INFO]  Saved checkpoint to "imputer_model\model-0040.params"
+2019-04-15 16:18:12,245 [INFO]  Saved checkpoint to "imputer_model\model-0040.params"
+2019-04-15 16:18:12,249 [INFO]  Epoch[40] Validation-cross-entropy=0.072320
+2019-04-15 16:18:12,249 [INFO]  Epoch[40] Validation-cross-entropy=0.072320
+2019-04-15 16:18:12,250 [INFO]  Epoch[40] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,250 [INFO]  Epoch[40] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,270 [INFO]  Epoch[41] Batch [0-4]	Speed: 5333.61 samples/sec	cross-entropy=0.009102	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,270 [INFO]  Epoch[41] Batch [0-4]	Speed: 5333.61 samples/sec	cross-entropy=0.009102	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,278 [INFO]  Epoch[41] Train-cross-entropy=0.008088
+2019-04-15 16:18:12,278 [INFO]  Epoch[41] Train-cross-entropy=0.008088
+2019-04-15 16:18:12,279 [INFO]  Epoch[41] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,279 [INFO]  Epoch[41] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,281 [INFO]  Epoch[41] Time cost=0.028
+2019-04-15 16:18:12,281 [INFO]  Epoch[41] Time cost=0.028
+2019-04-15 16:18:12,304 [INFO]  Saved checkpoint to "imputer_model\model-0041.params"
+2019-04-15 16:18:12,304 [INFO]  Saved checkpoint to "imputer_model\model-0041.params"
+2019-04-15 16:18:12,307 [INFO]  Epoch[41] Validation-cross-entropy=0.070614
+2019-04-15 16:18:12,307 [INFO]  Epoch[41] Validation-cross-entropy=0.070614
+2019-04-15 16:18:12,308 [INFO]  Epoch[41] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,308 [INFO]  Epoch[41] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,324 [INFO]  Epoch[42] Batch [0-4]	Speed: 6400.01 samples/sec	cross-entropy=0.008556	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,324 [INFO]  Epoch[42] Batch [0-4]	Speed: 6400.01 samples/sec	cross-entropy=0.008556	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,329 [INFO]  Epoch[42] Train-cross-entropy=0.007634
+2019-04-15 16:18:12,329 [INFO]  Epoch[42] Train-cross-entropy=0.007634
+2019-04-15 16:18:12,331 [INFO]  Epoch[42] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,331 [INFO]  Epoch[42] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,332 [INFO]  Epoch[42] Time cost=0.022
+2019-04-15 16:18:12,332 [INFO]  Epoch[42] Time cost=0.022
+2019-04-15 16:18:12,352 [INFO]  Saved checkpoint to "imputer_model\model-0042.params"
+2019-04-15 16:18:12,352 [INFO]  Saved checkpoint to "imputer_model\model-0042.params"
+2019-04-15 16:18:12,357 [INFO]  Epoch[42] Validation-cross-entropy=0.068899
+2019-04-15 16:18:12,357 [INFO]  Epoch[42] Validation-cross-entropy=0.068899
+2019-04-15 16:18:12,358 [INFO]  Epoch[42] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,358 [INFO]  Epoch[42] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,377 [INFO]  Epoch[43] Batch [0-4]	Speed: 5819.61 samples/sec	cross-entropy=0.008056	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,377 [INFO]  Epoch[43] Batch [0-4]	Speed: 5819.61 samples/sec	cross-entropy=0.008056	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,383 [INFO]  Epoch[43] Train-cross-entropy=0.007214
+2019-04-15 16:18:12,383 [INFO]  Epoch[43] Train-cross-entropy=0.007214
+2019-04-15 16:18:12,384 [INFO]  Epoch[43] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,384 [INFO]  Epoch[43] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,386 [INFO]  Epoch[43] Time cost=0.026
+2019-04-15 16:18:12,386 [INFO]  Epoch[43] Time cost=0.026
+2019-04-15 16:18:12,406 [INFO]  Saved checkpoint to "imputer_model\model-0043.params"
+2019-04-15 16:18:12,406 [INFO]  Saved checkpoint to "imputer_model\model-0043.params"
+2019-04-15 16:18:12,412 [INFO]  Epoch[43] Validation-cross-entropy=0.067435
+2019-04-15 16:18:12,412 [INFO]  Epoch[43] Validation-cross-entropy=0.067435
+2019-04-15 16:18:12,414 [INFO]  Epoch[43] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,414 [INFO]  Epoch[43] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,429 [INFO]  Epoch[44] Batch [0-4]	Speed: 9145.08 samples/sec	cross-entropy=0.007591	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,429 [INFO]  Epoch[44] Batch [0-4]	Speed: 9145.08 samples/sec	cross-entropy=0.007591	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,435 [INFO]  Epoch[44] Train-cross-entropy=0.006827
+2019-04-15 16:18:12,435 [INFO]  Epoch[44] Train-cross-entropy=0.006827
+2019-04-15 16:18:12,438 [INFO]  Epoch[44] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,438 [INFO]  Epoch[44] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,441 [INFO]  Epoch[44] Time cost=0.025
+2019-04-15 16:18:12,441 [INFO]  Epoch[44] Time cost=0.025
+2019-04-15 16:18:12,460 [INFO]  Saved checkpoint to "imputer_model\model-0044.params"
+2019-04-15 16:18:12,460 [INFO]  Saved checkpoint to "imputer_model\model-0044.params"
+2019-04-15 16:18:12,465 [INFO]  Epoch[44] Validation-cross-entropy=0.066132
+2019-04-15 16:18:12,465 [INFO]  Epoch[44] Validation-cross-entropy=0.066132
+2019-04-15 16:18:12,467 [INFO]  Epoch[44] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,467 [INFO]  Epoch[44] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,480 [INFO]  Epoch[45] Batch [0-4]	Speed: 9146.32 samples/sec	cross-entropy=0.007168	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,480 [INFO]  Epoch[45] Batch [0-4]	Speed: 9146.32 samples/sec	cross-entropy=0.007168	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,493 [INFO]  Epoch[45] Train-cross-entropy=0.006470
+2019-04-15 16:18:12,493 [INFO]  Epoch[45] Train-cross-entropy=0.006470
+2019-04-15 16:18:12,494 [INFO]  Epoch[45] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,494 [INFO]  Epoch[45] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,496 [INFO]  Epoch[45] Time cost=0.028
+2019-04-15 16:18:12,496 [INFO]  Epoch[45] Time cost=0.028
+2019-04-15 16:18:12,515 [INFO]  Saved checkpoint to "imputer_model\model-0045.params"
+2019-04-15 16:18:12,515 [INFO]  Saved checkpoint to "imputer_model\model-0045.params"
+2019-04-15 16:18:12,520 [INFO]  Epoch[45] Validation-cross-entropy=0.064705
+2019-04-15 16:18:12,520 [INFO]  Epoch[45] Validation-cross-entropy=0.064705
+2019-04-15 16:18:12,523 [INFO]  Epoch[45] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,523 [INFO]  Epoch[45] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,541 [INFO]  Epoch[46] Batch [0-4]	Speed: 5335.95 samples/sec	cross-entropy=0.006781	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,541 [INFO]  Epoch[46] Batch [0-4]	Speed: 5335.95 samples/sec	cross-entropy=0.006781	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,551 [INFO]  Epoch[46] Train-cross-entropy=0.006137
+2019-04-15 16:18:12,551 [INFO]  Epoch[46] Train-cross-entropy=0.006137
+2019-04-15 16:18:12,555 [INFO]  Epoch[46] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,555 [INFO]  Epoch[46] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,557 [INFO]  Epoch[46] Time cost=0.031
+2019-04-15 16:18:12,557 [INFO]  Epoch[46] Time cost=0.031
+2019-04-15 16:18:12,577 [INFO]  Saved checkpoint to "imputer_model\model-0046.params"
+2019-04-15 16:18:12,577 [INFO]  Saved checkpoint to "imputer_model\model-0046.params"
+2019-04-15 16:18:12,581 [INFO]  Epoch[46] Validation-cross-entropy=0.063551
+2019-04-15 16:18:12,581 [INFO]  Epoch[46] Validation-cross-entropy=0.063551
+2019-04-15 16:18:12,582 [INFO]  Epoch[46] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,582 [INFO]  Epoch[46] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,602 [INFO]  Epoch[47] Batch [0-4]	Speed: 7112.00 samples/sec	cross-entropy=0.006429	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,602 [INFO]  Epoch[47] Batch [0-4]	Speed: 7112.00 samples/sec	cross-entropy=0.006429	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,613 [INFO]  Epoch[47] Train-cross-entropy=0.005831
+2019-04-15 16:18:12,613 [INFO]  Epoch[47] Train-cross-entropy=0.005831
+2019-04-15 16:18:12,616 [INFO]  Epoch[47] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,616 [INFO]  Epoch[47] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,617 [INFO]  Epoch[47] Time cost=0.033
+2019-04-15 16:18:12,617 [INFO]  Epoch[47] Time cost=0.033
+2019-04-15 16:18:12,640 [INFO]  Saved checkpoint to "imputer_model\model-0047.params"
+2019-04-15 16:18:12,640 [INFO]  Saved checkpoint to "imputer_model\model-0047.params"
+2019-04-15 16:18:12,644 [INFO]  Epoch[47] Validation-cross-entropy=0.062402
+2019-04-15 16:18:12,644 [INFO]  Epoch[47] Validation-cross-entropy=0.062402
+2019-04-15 16:18:12,646 [INFO]  Epoch[47] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,646 [INFO]  Epoch[47] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,662 [INFO]  Epoch[48] Batch [0-4]	Speed: 6400.46 samples/sec	cross-entropy=0.006104	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,662 [INFO]  Epoch[48] Batch [0-4]	Speed: 6400.46 samples/sec	cross-entropy=0.006104	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,669 [INFO]  Epoch[48] Train-cross-entropy=0.005550
+2019-04-15 16:18:12,669 [INFO]  Epoch[48] Train-cross-entropy=0.005550
+2019-04-15 16:18:12,673 [INFO]  Epoch[48] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,673 [INFO]  Epoch[48] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,676 [INFO]  Epoch[48] Time cost=0.028
+2019-04-15 16:18:12,676 [INFO]  Epoch[48] Time cost=0.028
+2019-04-15 16:18:12,695 [INFO]  Saved checkpoint to "imputer_model\model-0048.params"
+2019-04-15 16:18:12,695 [INFO]  Saved checkpoint to "imputer_model\model-0048.params"
+2019-04-15 16:18:12,698 [INFO]  Epoch[48] Validation-cross-entropy=0.061546
+2019-04-15 16:18:12,698 [INFO]  Epoch[48] Validation-cross-entropy=0.061546
+2019-04-15 16:18:12,700 [INFO]  Epoch[48] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,700 [INFO]  Epoch[48] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,717 [INFO]  Epoch[49] Batch [0-4]	Speed: 8006.55 samples/sec	cross-entropy=0.005796	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,717 [INFO]  Epoch[49] Batch [0-4]	Speed: 8006.55 samples/sec	cross-entropy=0.005796	Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,726 [INFO]  Epoch[49] Train-cross-entropy=0.005282
+2019-04-15 16:18:12,726 [INFO]  Epoch[49] Train-cross-entropy=0.005282
+2019-04-15 16:18:12,727 [INFO]  Epoch[49] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,727 [INFO]  Epoch[49] Train-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,728 [INFO]  Epoch[49] Time cost=0.027
+2019-04-15 16:18:12,728 [INFO]  Epoch[49] Time cost=0.027
+2019-04-15 16:18:12,751 [INFO]  Saved checkpoint to "imputer_model\model-0049.params"
+2019-04-15 16:18:12,751 [INFO]  Saved checkpoint to "imputer_model\model-0049.params"
+2019-04-15 16:18:12,758 [INFO]  Epoch[49] Validation-cross-entropy=0.060468
+2019-04-15 16:18:12,758 [INFO]  Epoch[49] Validation-cross-entropy=0.060468
+2019-04-15 16:18:12,759 [INFO]  Epoch[49] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,759 [INFO]  Epoch[49] Validation-Log GDP per capita (PPP)-accuracy=0.000000
+2019-04-15 16:18:12,761 [INFO]  
+========== done (2.9510762691497803 s) fit model
+2019-04-15 16:18:12,761 [INFO]  
+========== done (2.9510762691497803 s) fit model
+2019-04-15 16:18:12,771 [INFO]  Expected calibration error: 100.0%
+2019-04-15 16:18:12,771 [INFO]  Expected calibration error: 100.0%
+2019-04-15 16:18:12,780 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-15 16:18:12,780 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-15 16:18:12,791 [INFO]  save metrics in imputer_model\fit-test-metrics.json
+2019-04-15 16:18:12,791 [INFO]  save metrics in imputer_model\fit-test-metrics.json
+2019-04-15 16:18:12,804 [INFO]  Keeping imputer_model\model-0049.params
+2019-04-15 16:18:12,804 [INFO]  Keeping imputer_model\model-0049.params
+2019-04-15 16:18:12,808 [INFO]  Deleting imputer_model\model-0041.params
+2019-04-15 16:18:12,808 [INFO]  Deleting imputer_model\model-0041.params
+2019-04-15 16:18:12,811 [INFO]  Deleting imputer_model\model-0031.params
+2019-04-15 16:18:12,811 [INFO]  Deleting imputer_model\model-0031.params
+2019-04-15 16:18:12,814 [INFO]  Deleting imputer_model\model-0044.params
+2019-04-15 16:18:12,814 [INFO]  Deleting imputer_model\model-0044.params
+2019-04-15 16:18:12,816 [INFO]  Deleting imputer_model\model-0046.params
+2019-04-15 16:18:12,816 [INFO]  Deleting imputer_model\model-0046.params
+2019-04-15 16:18:12,818 [INFO]  Deleting imputer_model\model-0029.params
+2019-04-15 16:18:12,818 [INFO]  Deleting imputer_model\model-0029.params
+2019-04-15 16:18:12,822 [INFO]  Deleting imputer_model\model-0045.params
+2019-04-15 16:18:12,822 [INFO]  Deleting imputer_model\model-0045.params
+2019-04-15 16:18:12,824 [INFO]  Deleting imputer_model\model-0043.params
+2019-04-15 16:18:12,824 [INFO]  Deleting imputer_model\model-0043.params
+2019-04-15 16:18:12,827 [INFO]  Deleting imputer_model\model-0048.params
+2019-04-15 16:18:12,827 [INFO]  Deleting imputer_model\model-0048.params
+2019-04-15 16:18:12,829 [INFO]  Deleting imputer_model\model-0005.params
+2019-04-15 16:18:12,829 [INFO]  Deleting imputer_model\model-0005.params
+2019-04-15 16:18:12,831 [INFO]  Deleting imputer_model\model-0010.params
+2019-04-15 16:18:12,831 [INFO]  Deleting imputer_model\model-0010.params
+2019-04-15 16:18:12,834 [INFO]  Deleting imputer_model\model-0037.params
+2019-04-15 16:18:12,834 [INFO]  Deleting imputer_model\model-0037.params
+2019-04-15 16:18:12,836 [INFO]  Deleting imputer_model\model-0038.params
+2019-04-15 16:18:12,836 [INFO]  Deleting imputer_model\model-0038.params
+2019-04-15 16:18:12,838 [INFO]  Deleting imputer_model\model-0011.params
+2019-04-15 16:18:12,838 [INFO]  Deleting imputer_model\model-0011.params
+2019-04-15 16:18:12,840 [INFO]  Deleting imputer_model\model-0014.params
+2019-04-15 16:18:12,840 [INFO]  Deleting imputer_model\model-0014.params
+2019-04-15 16:18:12,843 [INFO]  Deleting imputer_model\model-0009.params
+2019-04-15 16:18:12,843 [INFO]  Deleting imputer_model\model-0009.params
+2019-04-15 16:18:12,846 [INFO]  Deleting imputer_model\model-0016.params
+2019-04-15 16:18:12,846 [INFO]  Deleting imputer_model\model-0016.params
+2019-04-15 16:18:12,848 [INFO]  Deleting imputer_model\model-0030.params
+2019-04-15 16:18:12,848 [INFO]  Deleting imputer_model\model-0030.params
+2019-04-15 16:18:12,850 [INFO]  Deleting imputer_model\model-0034.params
+2019-04-15 16:18:12,850 [INFO]  Deleting imputer_model\model-0034.params
+2019-04-15 16:18:12,852 [INFO]  Deleting imputer_model\model-0000.params
+2019-04-15 16:18:12,852 [INFO]  Deleting imputer_model\model-0000.params
+2019-04-15 16:18:12,855 [INFO]  Deleting imputer_model\model-0042.params
+2019-04-15 16:18:12,855 [INFO]  Deleting imputer_model\model-0042.params
+2019-04-15 16:18:12,857 [INFO]  Deleting imputer_model\model-0006.params
+2019-04-15 16:18:12,857 [INFO]  Deleting imputer_model\model-0006.params
+2019-04-15 16:18:12,859 [INFO]  Deleting imputer_model\model-0036.params
+2019-04-15 16:18:12,859 [INFO]  Deleting imputer_model\model-0036.params
+2019-04-15 16:18:12,861 [INFO]  Deleting imputer_model\model-0002.params
+2019-04-15 16:18:12,861 [INFO]  Deleting imputer_model\model-0002.params
+2019-04-15 16:18:12,864 [INFO]  Deleting imputer_model\model-0047.params
+2019-04-15 16:18:12,864 [INFO]  Deleting imputer_model\model-0047.params
+2019-04-15 16:18:12,868 [INFO]  Deleting imputer_model\model-0008.params
+2019-04-15 16:18:12,868 [INFO]  Deleting imputer_model\model-0008.params
+2019-04-15 16:18:12,870 [INFO]  Deleting imputer_model\model-0035.params
+2019-04-15 16:18:12,870 [INFO]  Deleting imputer_model\model-0035.params
+2019-04-15 16:18:12,872 [INFO]  Deleting imputer_model\model-0033.params
+2019-04-15 16:18:12,872 [INFO]  Deleting imputer_model\model-0033.params
+2019-04-15 16:18:12,875 [INFO]  Deleting imputer_model\model-0013.params
+2019-04-15 16:18:12,875 [INFO]  Deleting imputer_model\model-0013.params
+2019-04-15 16:18:12,877 [INFO]  Deleting imputer_model\model-0004.params
+2019-04-15 16:18:12,877 [INFO]  Deleting imputer_model\model-0004.params
+2019-04-15 16:18:12,879 [INFO]  Deleting imputer_model\model-0025.params
+2019-04-15 16:18:12,879 [INFO]  Deleting imputer_model\model-0025.params
+2019-04-15 16:18:12,882 [INFO]  Deleting imputer_model\model-0027.params
+2019-04-15 16:18:12,882 [INFO]  Deleting imputer_model\model-0027.params
+2019-04-15 16:18:12,884 [INFO]  Deleting imputer_model\model-0020.params
+2019-04-15 16:18:12,884 [INFO]  Deleting imputer_model\model-0020.params
+2019-04-15 16:18:12,886 [INFO]  Deleting imputer_model\model-0007.params
+2019-04-15 16:18:12,886 [INFO]  Deleting imputer_model\model-0007.params
+2019-04-15 16:18:12,888 [INFO]  Deleting imputer_model\model-0023.params
+2019-04-15 16:18:12,888 [INFO]  Deleting imputer_model\model-0023.params
+2019-04-15 16:18:12,890 [INFO]  Deleting imputer_model\model-0039.params
+2019-04-15 16:18:12,890 [INFO]  Deleting imputer_model\model-0039.params
+2019-04-15 16:18:12,892 [INFO]  Deleting imputer_model\model-0017.params
+2019-04-15 16:18:12,892 [INFO]  Deleting imputer_model\model-0017.params
+2019-04-15 16:18:12,894 [INFO]  Deleting imputer_model\model-0015.params
+2019-04-15 16:18:12,894 [INFO]  Deleting imputer_model\model-0015.params
+2019-04-15 16:18:12,896 [INFO]  Deleting imputer_model\model-0018.params
+2019-04-15 16:18:12,896 [INFO]  Deleting imputer_model\model-0018.params
+2019-04-15 16:18:12,897 [INFO]  Deleting imputer_model\model-0003.params
+2019-04-15 16:18:12,897 [INFO]  Deleting imputer_model\model-0003.params
+2019-04-15 16:18:12,899 [INFO]  Deleting imputer_model\model-0028.params
+2019-04-15 16:18:12,899 [INFO]  Deleting imputer_model\model-0028.params
+2019-04-15 16:18:12,901 [INFO]  Deleting imputer_model\model-0012.params
+2019-04-15 16:18:12,901 [INFO]  Deleting imputer_model\model-0012.params
+2019-04-15 16:18:12,922 [INFO]  Deleting imputer_model\model-0032.params
+2019-04-15 16:18:12,922 [INFO]  Deleting imputer_model\model-0032.params
+2019-04-15 16:18:12,924 [INFO]  Deleting imputer_model\model-0040.params
+2019-04-15 16:18:12,924 [INFO]  Deleting imputer_model\model-0040.params
+2019-04-15 16:18:12,926 [INFO]  Deleting imputer_model\model-0019.params
+2019-04-15 16:18:12,926 [INFO]  Deleting imputer_model\model-0019.params
+2019-04-15 16:18:12,928 [INFO]  Deleting imputer_model\model-0022.params
+2019-04-15 16:18:12,928 [INFO]  Deleting imputer_model\model-0022.params
+2019-04-15 16:18:12,930 [INFO]  Deleting imputer_model\model-0001.params
+2019-04-15 16:18:12,930 [INFO]  Deleting imputer_model\model-0001.params
+2019-04-15 16:18:12,932 [INFO]  Deleting imputer_model\model-0024.params
+2019-04-15 16:18:12,932 [INFO]  Deleting imputer_model\model-0024.params
+2019-04-15 16:18:12,934 [INFO]  Deleting imputer_model\model-0026.params
+2019-04-15 16:18:12,934 [INFO]  Deleting imputer_model\model-0026.params
+2019-04-15 16:18:12,938 [INFO]  Deleting imputer_model\model-0021.params
+2019-04-15 16:18:12,938 [INFO]  Deleting imputer_model\model-0021.params
+2019-04-15 16:18:13,050 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-z6Y1t9EwL5
+2019-04-15 16:18:13,050 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-z6Y1t9EwL5
+2019-04-15 16:18:13,052 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:13,052 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:13,057 [INFO]  Data Encoding - Encoded 32 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (32, 8)                         and then into shape (32, 8)
+2019-04-15 16:18:13,057 [INFO]  Data Encoding - Encoded 32 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (32, 8)                         and then into shape (32, 8)
+2019-04-15 16:18:13,061 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:18:13,061 [INFO]  Concatenating numeric columns ['Log GDP per capita (PPP)'] into Log GDP per capita (PPP)
+2019-04-15 16:18:13,063 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:13,063 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:18:13,066 [INFO]  Label Encoding - Encoded 32 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (32, 1) and                             then into shape (32, 1)
+2019-04-15 16:18:13,066 [INFO]  Label Encoding - Encoded 32 rows of column                             Log GDP per capita (PPP) with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (32, 1) and                             then into shape (32, 1)
+2019-04-15 16:18:13,075 [INFO]  Top-k only for CategoricalEncoder, dropping Log GDP per capita (PPP), <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-15 16:18:13,075 [INFO]  Top-k only for CategoricalEncoder, dropping Log GDP per capita (PPP), <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-15 16:18:13,076 [INFO]  Precision filtering only for CategoricalEncoder returning                             Log GDP per capita (PPP) unfiltered
+2019-04-15 16:18:13,076 [INFO]  Precision filtering only for CategoricalEncoder returning                             Log GDP per capita (PPP) unfiltered
+2019-04-15 16:56:22,572 [INFO]  Assuming 8 numeric input columns: Life Ladder, Log GDP per capita (PPP), Social Support, Log Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness
+2019-04-15 16:56:22,572 [INFO]  Assuming 8 numeric input columns: Life Ladder, Log GDP per capita (PPP), Social Support, Log Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness
+2019-04-15 16:56:22,577 [INFO]  Assuming 0 string input columns: 
+2019-04-15 16:56:22,577 [INFO]  Assuming 0 string input columns: 
+2019-04-15 16:56:22,585 [INFO]  No output column name provided for ColumnEncoder using Log Healthy life expectancy at birth
+2019-04-15 16:56:22,585 [INFO]  No output column name provided for ColumnEncoder using Log Healthy life expectancy at birth
+2019-04-15 16:56:22,586 [INFO]  Assuming numeric output column: Log Healthy life expectancy at birth
+2019-04-15 16:56:22,586 [INFO]  Assuming numeric output column: Log Healthy life expectancy at birth
+2019-04-15 16:56:22,604 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-15 16:56:22,604 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-15 16:56:22,604 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-15 16:56:22,614 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 108 rows                             of training data
+2019-04-15 16:56:22,614 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 108 rows                             of training data
+2019-04-15 16:56:22,614 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 108 rows                             of training data
+2019-04-15 16:56:22,633 [INFO]  Detected 0 rows with missing labels                         for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,633 [INFO]  Detected 0 rows with missing labels                         for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,633 [INFO]  Detected 0 rows with missing labels                         for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,635 [INFO]  Dropping 0/108 rows
+2019-04-15 16:56:22,635 [INFO]  Dropping 0/108 rows
+2019-04-15 16:56:22,635 [INFO]  Dropping 0/108 rows
+2019-04-15 16:56:22,638 [INFO]  Detected 0 rows with missing labels                         for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,638 [INFO]  Detected 0 rows with missing labels                         for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,638 [INFO]  Detected 0 rows with missing labels                         for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,642 [INFO]  Dropping 0/12 rows
+2019-04-15 16:56:22,642 [INFO]  Dropping 0/12 rows
+2019-04-15 16:56:22,642 [INFO]  Dropping 0/12 rows
+2019-04-15 16:56:22,645 [INFO]  Train: 108, Test: 12
+2019-04-15 16:56:22,645 [INFO]  Train: 108, Test: 12
+2019-04-15 16:56:22,645 [INFO]  Train: 108, Test: 12
+2019-04-15 16:56:22,646 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Life Ladder, Log GDP per capita (PPP), Social Support, Log Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness and 108 rows of training data with parameters {'input_columns': ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'], 'output_column': 'numerical_features-6nGisiWgNZ', 'output_dim': 8, 'normalize': True, 'scaler': None}
+2019-04-15 16:56:22,646 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Life Ladder, Log GDP per capita (PPP), Social Support, Log Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness and 108 rows of training data with parameters {'input_columns': ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'], 'output_column': 'numerical_features-6nGisiWgNZ', 'output_dim': 8, 'normalize': True, 'scaler': None}
+2019-04-15 16:56:22,646 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Life Ladder, Log GDP per capita (PPP), Social Support, Log Healthy life expectancy at birth, Freedom to make life choices, Generosity, Perceptions of corruption, Happiness and 108 rows of training data with parameters {'input_columns': ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'], 'output_column': 'numerical_features-6nGisiWgNZ', 'output_dim': 8, 'normalize': True, 'scaler': None}
+2019-04-15 16:56:22,668 [INFO]  Building Train Iterator with 108 elements
+2019-04-15 16:56:22,668 [INFO]  Building Train Iterator with 108 elements
+2019-04-15 16:56:22,668 [INFO]  Building Train Iterator with 108 elements
+2019-04-15 16:56:22,708 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:22,708 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:22,708 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:22,709 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,709 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,709 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,719 [INFO]  Data Encoding - Encoded 112 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (112, 8)                         and then into shape (112, 8)
+2019-04-15 16:56:22,719 [INFO]  Data Encoding - Encoded 112 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (112, 8)                         and then into shape (112, 8)
+2019-04-15 16:56:22,719 [INFO]  Data Encoding - Encoded 112 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (112, 8)                         and then into shape (112, 8)
+2019-04-15 16:56:22,722 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:22,722 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:22,722 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:22,724 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,724 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,724 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,727 [INFO]  Label Encoding - Encoded 112 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (112, 1) and                             then into shape (112, 1)
+2019-04-15 16:56:22,727 [INFO]  Label Encoding - Encoded 112 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (112, 1) and                             then into shape (112, 1)
+2019-04-15 16:56:22,727 [INFO]  Label Encoding - Encoded 112 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (112, 1) and                             then into shape (112, 1)
+2019-04-15 16:56:22,729 [INFO]  Building Test Iterator with 12 elements
+2019-04-15 16:56:22,729 [INFO]  Building Test Iterator with 12 elements
+2019-04-15 16:56:22,729 [INFO]  Building Test Iterator with 12 elements
+2019-04-15 16:56:22,767 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:22,767 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:22,767 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:22,768 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,768 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,768 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,772 [INFO]  Data Encoding - Encoded 16 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (16, 8)                         and then into shape (16, 8)
+2019-04-15 16:56:22,772 [INFO]  Data Encoding - Encoded 16 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (16, 8)                         and then into shape (16, 8)
+2019-04-15 16:56:22,772 [INFO]  Data Encoding - Encoded 16 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (16, 8)                         and then into shape (16, 8)
+2019-04-15 16:56:22,778 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:22,778 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:22,778 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:22,781 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,781 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,781 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:22,786 [INFO]  Label Encoding - Encoded 16 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (16, 1) and                             then into shape (16, 1)
+2019-04-15 16:56:22,786 [INFO]  Label Encoding - Encoded 16 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (16, 1) and                             then into shape (16, 1)
+2019-04-15 16:56:22,786 [INFO]  Label Encoding - Encoded 16 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (16, 1) and                             then into shape (16, 1)
+2019-04-15 16:56:22,788 [INFO]  Concatenating all 1 latent symbols
+2019-04-15 16:56:22,788 [INFO]  Concatenating all 1 latent symbols
+2019-04-15 16:56:22,788 [INFO]  Concatenating all 1 latent symbols
+2019-04-15 16:56:22,791 [INFO]  Constructing numerical loss for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,791 [INFO]  Constructing numerical loss for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,791 [INFO]  Constructing numerical loss for column Log Healthy life expectancy at birth
+2019-04-15 16:56:22,797 [INFO]  Building output symbols
+2019-04-15 16:56:22,797 [INFO]  Building output symbols
+2019-04-15 16:56:22,797 [INFO]  Building output symbols
+2019-04-15 16:56:22,814 [INFO]  
+========== start: fit model
+2019-04-15 16:56:22,814 [INFO]  
+========== start: fit model
+2019-04-15 16:56:22,814 [INFO]  
+========== start: fit model
+2019-04-15 16:56:22,816 [WARNING]  Already bound, ignoring bind()
+2019-04-15 16:56:22,816 [WARNING]  Already bound, ignoring bind()
+2019-04-15 16:56:22,816 [WARNING]  Already bound, ignoring bind()
+2019-04-15 16:56:22,836 [INFO]  Epoch[0] Batch [0-4]	Speed: 7113.51 samples/sec	cross-entropy=16.336032	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,836 [INFO]  Epoch[0] Batch [0-4]	Speed: 7113.51 samples/sec	cross-entropy=16.336032	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,836 [INFO]  Epoch[0] Batch [0-4]	Speed: 7113.51 samples/sec	cross-entropy=16.336032	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,845 [INFO]  Epoch[0] Train-cross-entropy=12.964167
+2019-04-15 16:56:22,845 [INFO]  Epoch[0] Train-cross-entropy=12.964167
+2019-04-15 16:56:22,845 [INFO]  Epoch[0] Train-cross-entropy=12.964167
+2019-04-15 16:56:22,846 [INFO]  Epoch[0] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,846 [INFO]  Epoch[0] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,846 [INFO]  Epoch[0] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,848 [INFO]  Epoch[0] Time cost=0.026
+2019-04-15 16:56:22,848 [INFO]  Epoch[0] Time cost=0.026
+2019-04-15 16:56:22,848 [INFO]  Epoch[0] Time cost=0.026
+2019-04-15 16:56:22,872 [INFO]  Saved checkpoint to "imputer_model\model-0000.params"
+2019-04-15 16:56:22,872 [INFO]  Saved checkpoint to "imputer_model\model-0000.params"
+2019-04-15 16:56:22,872 [INFO]  Saved checkpoint to "imputer_model\model-0000.params"
+2019-04-15 16:56:22,877 [INFO]  Epoch[0] Validation-cross-entropy=2.531592
+2019-04-15 16:56:22,877 [INFO]  Epoch[0] Validation-cross-entropy=2.531592
+2019-04-15 16:56:22,877 [INFO]  Epoch[0] Validation-cross-entropy=2.531592
+2019-04-15 16:56:22,878 [INFO]  Epoch[0] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,878 [INFO]  Epoch[0] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,878 [INFO]  Epoch[0] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,892 [INFO]  Epoch[1] Batch [0-4]	Speed: 8004.64 samples/sec	cross-entropy=5.407958	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,892 [INFO]  Epoch[1] Batch [0-4]	Speed: 8004.64 samples/sec	cross-entropy=5.407958	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,892 [INFO]  Epoch[1] Batch [0-4]	Speed: 8004.64 samples/sec	cross-entropy=5.407958	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,901 [INFO]  Epoch[1] Train-cross-entropy=5.095252
+2019-04-15 16:56:22,901 [INFO]  Epoch[1] Train-cross-entropy=5.095252
+2019-04-15 16:56:22,901 [INFO]  Epoch[1] Train-cross-entropy=5.095252
+2019-04-15 16:56:22,904 [INFO]  Epoch[1] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,904 [INFO]  Epoch[1] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,904 [INFO]  Epoch[1] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,909 [INFO]  Epoch[1] Time cost=0.028
+2019-04-15 16:56:22,909 [INFO]  Epoch[1] Time cost=0.028
+2019-04-15 16:56:22,909 [INFO]  Epoch[1] Time cost=0.028
+2019-04-15 16:56:22,922 [INFO]  Saved checkpoint to "imputer_model\model-0001.params"
+2019-04-15 16:56:22,922 [INFO]  Saved checkpoint to "imputer_model\model-0001.params"
+2019-04-15 16:56:22,922 [INFO]  Saved checkpoint to "imputer_model\model-0001.params"
+2019-04-15 16:56:22,926 [INFO]  Epoch[1] Validation-cross-entropy=4.173511
+2019-04-15 16:56:22,926 [INFO]  Epoch[1] Validation-cross-entropy=4.173511
+2019-04-15 16:56:22,926 [INFO]  Epoch[1] Validation-cross-entropy=4.173511
+2019-04-15 16:56:22,928 [INFO]  Epoch[1] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,928 [INFO]  Epoch[1] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,928 [INFO]  Epoch[1] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,946 [INFO]  Epoch[2] Batch [0-4]	Speed: 6401.53 samples/sec	cross-entropy=4.739192	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,946 [INFO]  Epoch[2] Batch [0-4]	Speed: 6401.53 samples/sec	cross-entropy=4.739192	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,946 [INFO]  Epoch[2] Batch [0-4]	Speed: 6401.53 samples/sec	cross-entropy=4.739192	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,952 [INFO]  Epoch[2] Train-cross-entropy=3.921202
+2019-04-15 16:56:22,952 [INFO]  Epoch[2] Train-cross-entropy=3.921202
+2019-04-15 16:56:22,952 [INFO]  Epoch[2] Train-cross-entropy=3.921202
+2019-04-15 16:56:22,953 [INFO]  Epoch[2] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,953 [INFO]  Epoch[2] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,953 [INFO]  Epoch[2] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,955 [INFO]  Epoch[2] Time cost=0.023
+2019-04-15 16:56:22,955 [INFO]  Epoch[2] Time cost=0.023
+2019-04-15 16:56:22,955 [INFO]  Epoch[2] Time cost=0.023
+2019-04-15 16:56:22,979 [INFO]  Saved checkpoint to "imputer_model\model-0002.params"
+2019-04-15 16:56:22,979 [INFO]  Saved checkpoint to "imputer_model\model-0002.params"
+2019-04-15 16:56:22,979 [INFO]  Saved checkpoint to "imputer_model\model-0002.params"
+2019-04-15 16:56:22,983 [INFO]  Epoch[2] Validation-cross-entropy=1.167372
+2019-04-15 16:56:22,983 [INFO]  Epoch[2] Validation-cross-entropy=1.167372
+2019-04-15 16:56:22,983 [INFO]  Epoch[2] Validation-cross-entropy=1.167372
+2019-04-15 16:56:22,985 [INFO]  Epoch[2] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,985 [INFO]  Epoch[2] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,985 [INFO]  Epoch[2] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,998 [INFO]  Epoch[3] Batch [0-4]	Speed: 10665.32 samples/sec	cross-entropy=2.480178	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,998 [INFO]  Epoch[3] Batch [0-4]	Speed: 10665.32 samples/sec	cross-entropy=2.480178	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:22,998 [INFO]  Epoch[3] Batch [0-4]	Speed: 10665.32 samples/sec	cross-entropy=2.480178	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,005 [INFO]  Epoch[3] Train-cross-entropy=2.031299
+2019-04-15 16:56:23,005 [INFO]  Epoch[3] Train-cross-entropy=2.031299
+2019-04-15 16:56:23,005 [INFO]  Epoch[3] Train-cross-entropy=2.031299
+2019-04-15 16:56:23,007 [INFO]  Epoch[3] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,007 [INFO]  Epoch[3] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,007 [INFO]  Epoch[3] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,009 [INFO]  Epoch[3] Time cost=0.023
+2019-04-15 16:56:23,009 [INFO]  Epoch[3] Time cost=0.023
+2019-04-15 16:56:23,009 [INFO]  Epoch[3] Time cost=0.023
+2019-04-15 16:56:23,032 [INFO]  Saved checkpoint to "imputer_model\model-0003.params"
+2019-04-15 16:56:23,032 [INFO]  Saved checkpoint to "imputer_model\model-0003.params"
+2019-04-15 16:56:23,032 [INFO]  Saved checkpoint to "imputer_model\model-0003.params"
+2019-04-15 16:56:23,037 [INFO]  Epoch[3] Validation-cross-entropy=1.564668
+2019-04-15 16:56:23,037 [INFO]  Epoch[3] Validation-cross-entropy=1.564668
+2019-04-15 16:56:23,037 [INFO]  Epoch[3] Validation-cross-entropy=1.564668
+2019-04-15 16:56:23,038 [INFO]  Epoch[3] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,038 [INFO]  Epoch[3] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,038 [INFO]  Epoch[3] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,052 [INFO]  Epoch[4] Batch [0-4]	Speed: 9142.90 samples/sec	cross-entropy=1.696457	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,052 [INFO]  Epoch[4] Batch [0-4]	Speed: 9142.90 samples/sec	cross-entropy=1.696457	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,052 [INFO]  Epoch[4] Batch [0-4]	Speed: 9142.90 samples/sec	cross-entropy=1.696457	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,064 [INFO]  Epoch[4] Train-cross-entropy=1.363734
+2019-04-15 16:56:23,064 [INFO]  Epoch[4] Train-cross-entropy=1.363734
+2019-04-15 16:56:23,064 [INFO]  Epoch[4] Train-cross-entropy=1.363734
+2019-04-15 16:56:23,066 [INFO]  Epoch[4] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,066 [INFO]  Epoch[4] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,066 [INFO]  Epoch[4] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,067 [INFO]  Epoch[4] Time cost=0.025
+2019-04-15 16:56:23,067 [INFO]  Epoch[4] Time cost=0.025
+2019-04-15 16:56:23,067 [INFO]  Epoch[4] Time cost=0.025
+2019-04-15 16:56:23,084 [INFO]  Saved checkpoint to "imputer_model\model-0004.params"
+2019-04-15 16:56:23,084 [INFO]  Saved checkpoint to "imputer_model\model-0004.params"
+2019-04-15 16:56:23,084 [INFO]  Saved checkpoint to "imputer_model\model-0004.params"
+2019-04-15 16:56:23,089 [INFO]  Epoch[4] Validation-cross-entropy=1.115154
+2019-04-15 16:56:23,089 [INFO]  Epoch[4] Validation-cross-entropy=1.115154
+2019-04-15 16:56:23,089 [INFO]  Epoch[4] Validation-cross-entropy=1.115154
+2019-04-15 16:56:23,094 [INFO]  Epoch[4] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,094 [INFO]  Epoch[4] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,094 [INFO]  Epoch[4] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,112 [INFO]  Epoch[5] Batch [0-4]	Speed: 8002.97 samples/sec	cross-entropy=0.892533	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,112 [INFO]  Epoch[5] Batch [0-4]	Speed: 8002.97 samples/sec	cross-entropy=0.892533	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,112 [INFO]  Epoch[5] Batch [0-4]	Speed: 8002.97 samples/sec	cross-entropy=0.892533	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,119 [INFO]  Epoch[5] Train-cross-entropy=0.746002
+2019-04-15 16:56:23,119 [INFO]  Epoch[5] Train-cross-entropy=0.746002
+2019-04-15 16:56:23,119 [INFO]  Epoch[5] Train-cross-entropy=0.746002
+2019-04-15 16:56:23,120 [INFO]  Epoch[5] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,120 [INFO]  Epoch[5] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,120 [INFO]  Epoch[5] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,122 [INFO]  Epoch[5] Time cost=0.023
+2019-04-15 16:56:23,122 [INFO]  Epoch[5] Time cost=0.023
+2019-04-15 16:56:23,122 [INFO]  Epoch[5] Time cost=0.023
+2019-04-15 16:56:23,143 [INFO]  Saved checkpoint to "imputer_model\model-0005.params"
+2019-04-15 16:56:23,143 [INFO]  Saved checkpoint to "imputer_model\model-0005.params"
+2019-04-15 16:56:23,143 [INFO]  Saved checkpoint to "imputer_model\model-0005.params"
+2019-04-15 16:56:23,148 [INFO]  Epoch[5] Validation-cross-entropy=0.645883
+2019-04-15 16:56:23,148 [INFO]  Epoch[5] Validation-cross-entropy=0.645883
+2019-04-15 16:56:23,148 [INFO]  Epoch[5] Validation-cross-entropy=0.645883
+2019-04-15 16:56:23,151 [INFO]  Epoch[5] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,151 [INFO]  Epoch[5] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,151 [INFO]  Epoch[5] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,166 [INFO]  Epoch[6] Batch [0-4]	Speed: 8001.53 samples/sec	cross-entropy=0.586197	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,166 [INFO]  Epoch[6] Batch [0-4]	Speed: 8001.53 samples/sec	cross-entropy=0.586197	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,166 [INFO]  Epoch[6] Batch [0-4]	Speed: 8001.53 samples/sec	cross-entropy=0.586197	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,172 [INFO]  Epoch[6] Train-cross-entropy=0.475609
+2019-04-15 16:56:23,172 [INFO]  Epoch[6] Train-cross-entropy=0.475609
+2019-04-15 16:56:23,172 [INFO]  Epoch[6] Train-cross-entropy=0.475609
+2019-04-15 16:56:23,173 [INFO]  Epoch[6] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,173 [INFO]  Epoch[6] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,173 [INFO]  Epoch[6] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,176 [INFO]  Epoch[6] Time cost=0.022
+2019-04-15 16:56:23,176 [INFO]  Epoch[6] Time cost=0.022
+2019-04-15 16:56:23,176 [INFO]  Epoch[6] Time cost=0.022
+2019-04-15 16:56:23,197 [INFO]  Saved checkpoint to "imputer_model\model-0006.params"
+2019-04-15 16:56:23,197 [INFO]  Saved checkpoint to "imputer_model\model-0006.params"
+2019-04-15 16:56:23,197 [INFO]  Saved checkpoint to "imputer_model\model-0006.params"
+2019-04-15 16:56:23,202 [INFO]  Epoch[6] Validation-cross-entropy=0.691403
+2019-04-15 16:56:23,202 [INFO]  Epoch[6] Validation-cross-entropy=0.691403
+2019-04-15 16:56:23,202 [INFO]  Epoch[6] Validation-cross-entropy=0.691403
+2019-04-15 16:56:23,203 [INFO]  Epoch[6] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,203 [INFO]  Epoch[6] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,203 [INFO]  Epoch[6] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,232 [INFO]  Epoch[7] Batch [0-4]	Speed: 3047.70 samples/sec	cross-entropy=0.362204	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,232 [INFO]  Epoch[7] Batch [0-4]	Speed: 3047.70 samples/sec	cross-entropy=0.362204	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,232 [INFO]  Epoch[7] Batch [0-4]	Speed: 3047.70 samples/sec	cross-entropy=0.362204	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,247 [INFO]  Epoch[7] Train-cross-entropy=0.289996
+2019-04-15 16:56:23,247 [INFO]  Epoch[7] Train-cross-entropy=0.289996
+2019-04-15 16:56:23,247 [INFO]  Epoch[7] Train-cross-entropy=0.289996
+2019-04-15 16:56:23,249 [INFO]  Epoch[7] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,249 [INFO]  Epoch[7] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,249 [INFO]  Epoch[7] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,251 [INFO]  Epoch[7] Time cost=0.046
+2019-04-15 16:56:23,251 [INFO]  Epoch[7] Time cost=0.046
+2019-04-15 16:56:23,251 [INFO]  Epoch[7] Time cost=0.046
+2019-04-15 16:56:23,273 [INFO]  Saved checkpoint to "imputer_model\model-0007.params"
+2019-04-15 16:56:23,273 [INFO]  Saved checkpoint to "imputer_model\model-0007.params"
+2019-04-15 16:56:23,273 [INFO]  Saved checkpoint to "imputer_model\model-0007.params"
+2019-04-15 16:56:23,281 [INFO]  Epoch[7] Validation-cross-entropy=0.741975
+2019-04-15 16:56:23,281 [INFO]  Epoch[7] Validation-cross-entropy=0.741975
+2019-04-15 16:56:23,281 [INFO]  Epoch[7] Validation-cross-entropy=0.741975
+2019-04-15 16:56:23,282 [INFO]  Epoch[7] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,282 [INFO]  Epoch[7] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,282 [INFO]  Epoch[7] Validation-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,297 [INFO]  Epoch[8] Batch [0-4]	Speed: 10672.10 samples/sec	cross-entropy=0.249345	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,297 [INFO]  Epoch[8] Batch [0-4]	Speed: 10672.10 samples/sec	cross-entropy=0.249345	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,297 [INFO]  Epoch[8] Batch [0-4]	Speed: 10672.10 samples/sec	cross-entropy=0.249345	Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,303 [INFO]  Epoch[8] Train-cross-entropy=0.204136
+2019-04-15 16:56:23,303 [INFO]  Epoch[8] Train-cross-entropy=0.204136
+2019-04-15 16:56:23,303 [INFO]  Epoch[8] Train-cross-entropy=0.204136
+2019-04-15 16:56:23,304 [INFO]  Epoch[8] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,304 [INFO]  Epoch[8] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,304 [INFO]  Epoch[8] Train-Log Healthy life expectancy at birth-accuracy=0.000000
+2019-04-15 16:56:23,308 [INFO]  Epoch[8] Time cost=0.024
+2019-04-15 16:56:23,308 [INFO]  Epoch[8] Time cost=0.024
+2019-04-15 16:56:23,308 [INFO]  Epoch[8] Time cost=0.024
+2019-04-15 16:56:23,329 [INFO]  Saved checkpoint to "imputer_model\model-0008.params"
+2019-04-15 16:56:23,329 [INFO]  Saved checkpoint to "imputer_model\model-0008.params"
+2019-04-15 16:56:23,329 [INFO]  Saved checkpoint to "imputer_model\model-0008.params"
+2019-04-15 16:56:23,332 [INFO]  No improvement detected for 3 epochs compared to 0.6458833813667297 last error obtained: 0.762337327003479, stopping here
+2019-04-15 16:56:23,332 [INFO]  No improvement detected for 3 epochs compared to 0.6458833813667297 last error obtained: 0.762337327003479, stopping here
+2019-04-15 16:56:23,332 [INFO]  No improvement detected for 3 epochs compared to 0.6458833813667297 last error obtained: 0.762337327003479, stopping here
+2019-04-15 16:56:23,333 [INFO]  Stopping training, patience reached
+2019-04-15 16:56:23,333 [INFO]  Stopping training, patience reached
+2019-04-15 16:56:23,333 [INFO]  Stopping training, patience reached
+2019-04-15 16:56:23,335 [INFO]  
+========== done (0.5210013389587402 s) fit model
+2019-04-15 16:56:23,335 [INFO]  
+========== done (0.5210013389587402 s) fit model
+2019-04-15 16:56:23,335 [INFO]  
+========== done (0.5210013389587402 s) fit model
+2019-04-15 16:56:23,350 [INFO]  Expected calibration error: 100.0%
+2019-04-15 16:56:23,350 [INFO]  Expected calibration error: 100.0%
+2019-04-15 16:56:23,350 [INFO]  Expected calibration error: 100.0%
+2019-04-15 16:56:23,360 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-15 16:56:23,360 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-15 16:56:23,360 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-15 16:56:23,367 [INFO]  save metrics in imputer_model\fit-test-metrics.json
+2019-04-15 16:56:23,367 [INFO]  save metrics in imputer_model\fit-test-metrics.json
+2019-04-15 16:56:23,367 [INFO]  save metrics in imputer_model\fit-test-metrics.json
+2019-04-15 16:56:23,376 [INFO]  Keeping imputer_model\model-0005.params
+2019-04-15 16:56:23,376 [INFO]  Keeping imputer_model\model-0005.params
+2019-04-15 16:56:23,376 [INFO]  Keeping imputer_model\model-0005.params
+2019-04-15 16:56:23,379 [INFO]  Deleting imputer_model\model-0000.params
+2019-04-15 16:56:23,379 [INFO]  Deleting imputer_model\model-0000.params
+2019-04-15 16:56:23,379 [INFO]  Deleting imputer_model\model-0000.params
+2019-04-15 16:56:23,384 [INFO]  Deleting imputer_model\model-0004.params
+2019-04-15 16:56:23,384 [INFO]  Deleting imputer_model\model-0004.params
+2019-04-15 16:56:23,384 [INFO]  Deleting imputer_model\model-0004.params
+2019-04-15 16:56:23,386 [INFO]  Deleting imputer_model\model-0049.params
+2019-04-15 16:56:23,386 [INFO]  Deleting imputer_model\model-0049.params
+2019-04-15 16:56:23,386 [INFO]  Deleting imputer_model\model-0049.params
+2019-04-15 16:56:23,389 [INFO]  Deleting imputer_model\model-0006.params
+2019-04-15 16:56:23,389 [INFO]  Deleting imputer_model\model-0006.params
+2019-04-15 16:56:23,389 [INFO]  Deleting imputer_model\model-0006.params
+2019-04-15 16:56:23,393 [INFO]  Deleting imputer_model\model-0001.params
+2019-04-15 16:56:23,393 [INFO]  Deleting imputer_model\model-0001.params
+2019-04-15 16:56:23,393 [INFO]  Deleting imputer_model\model-0001.params
+2019-04-15 16:56:23,397 [INFO]  Deleting imputer_model\model-0008.params
+2019-04-15 16:56:23,397 [INFO]  Deleting imputer_model\model-0008.params
+2019-04-15 16:56:23,397 [INFO]  Deleting imputer_model\model-0008.params
+2019-04-15 16:56:23,400 [INFO]  Deleting imputer_model\model-0002.params
+2019-04-15 16:56:23,400 [INFO]  Deleting imputer_model\model-0002.params
+2019-04-15 16:56:23,400 [INFO]  Deleting imputer_model\model-0002.params
+2019-04-15 16:56:23,404 [INFO]  Deleting imputer_model\model-0007.params
+2019-04-15 16:56:23,404 [INFO]  Deleting imputer_model\model-0007.params
+2019-04-15 16:56:23,404 [INFO]  Deleting imputer_model\model-0007.params
+2019-04-15 16:56:23,408 [INFO]  Deleting imputer_model\model-0003.params
+2019-04-15 16:56:23,408 [INFO]  Deleting imputer_model\model-0003.params
+2019-04-15 16:56:23,408 [INFO]  Deleting imputer_model\model-0003.params
+2019-04-15 16:56:23,506 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:23,506 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:23,506 [INFO]  Concatenating numeric columns ['Life Ladder', 'Log GDP per capita (PPP)', 'Social Support', 'Log Healthy life expectancy at birth', 'Freedom to make life choices', 'Generosity', 'Perceptions of corruption', 'Happiness'] into numerical_features-6nGisiWgNZ
+2019-04-15 16:56:23,507 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:23,507 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:23,507 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:23,513 [INFO]  Data Encoding - Encoded 32 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (32, 8)                         and then into shape (32, 8)
+2019-04-15 16:56:23,513 [INFO]  Data Encoding - Encoded 32 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (32, 8)                         and then into shape (32, 8)
+2019-04-15 16:56:23,513 [INFO]  Data Encoding - Encoded 32 rows of column                         Life Ladder,Log GDP per capita (PPP),Social Support,Log Healthy life expectancy at birth,Freedom to make life choices,Generosity,Perceptions of corruption,Happiness with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (32, 8)                         and then into shape (32, 8)
+2019-04-15 16:56:23,519 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:23,519 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:23,519 [INFO]  Concatenating numeric columns ['Log Healthy life expectancy at birth'] into Log Healthy life expectancy at birth
+2019-04-15 16:56:23,521 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:23,521 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:23,521 [INFO]  Normalizing with StandardScaler
+2019-04-15 16:56:23,528 [INFO]  Label Encoding - Encoded 32 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (32, 1) and                             then into shape (32, 1)
+2019-04-15 16:56:23,528 [INFO]  Label Encoding - Encoded 32 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (32, 1) and                             then into shape (32, 1)
+2019-04-15 16:56:23,528 [INFO]  Label Encoding - Encoded 32 rows of column                             Log Healthy life expectancy at birth with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (32, 1) and                             then into shape (32, 1)
+2019-04-15 16:56:23,535 [INFO]  Top-k only for CategoricalEncoder, dropping Log Healthy life expectancy at birth, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-15 16:56:23,535 [INFO]  Top-k only for CategoricalEncoder, dropping Log Healthy life expectancy at birth, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-15 16:56:23,535 [INFO]  Top-k only for CategoricalEncoder, dropping Log Healthy life expectancy at birth, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-15 16:56:23,537 [INFO]  Precision filtering only for CategoricalEncoder returning                             Log Healthy life expectancy at birth unfiltered
+2019-04-15 16:56:23,537 [INFO]  Precision filtering only for CategoricalEncoder returning                             Log Healthy life expectancy at birth unfiltered
+2019-04-15 16:56:23,537 [INFO]  Precision filtering only for CategoricalEncoder returning                             Log Healthy life expectancy at birth unfiltered
